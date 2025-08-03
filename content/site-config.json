@@ -16,9 +16,9 @@
   "navigation": [
     {"text": "Home", "url": "index.html"},
     {"text": "About Us", "url": "about.html"},
-    {"text": "FAQs", "url": "faqs.html"},
-    {"text": "Resources", "url": "resources.html"},
     {"text": "Enrollment", "url": "enrollment.html"},
+    {"text": "Resources", "url": "resources.html"},
+    {"text": "FAQs", "url": "faqs.html"},
     {"text": "Contact", "url": "contact.html"}
   ]
 }
