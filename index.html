@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placer Forest School - Nature-Based Learning in Rocklin, CA</title>
+    <meta name="description" content="Nature-based drop-off program for children ages 4+ in Rocklin, CA. Child-led outdoor learning inspired by respectful parenting. Fridays 10 AM - 3 PM.">
+    <meta name="keywords" content="forest school, nature education, outdoor learning, Rocklin, Lincoln, Roseville, children, preschool, drop-off program">
+    <meta name="author" content="Placer Forest School">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Placer Forest School - Nature-Based Learning">
+    <meta property="og:description" content="Rooted in Respect. Inspired by Nature. Built for Connection.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://placerforestschool.com">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            page_title: 'Home',
+            page_location: window.location.href,
+            custom_map: {'custom_parameter': 'custom_value'}
+        });
+        
+        // Track button clicks
+        function trackEvent(eventName, eventCategory, eventLabel) {
+            gtag('event', eventName, {
+                event_category: eventCategory,
+                event_label: eventLabel,
+                value: 1
+            });
+        }
+    </script>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Content Management System -->
+    <script src="js/content-manager.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🌲 Placer Forest School</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="faqs.html" class="nav-link">FAQs</a></li>
+                <li><a href="resources.html" class="nav-link">Resources</a></li>
+                <li><a href="enrollment.html" class="nav-link">Enrollment</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Message -->
+    <header class="hero-header">
+        <div class="hero-content">
+            <h1 class="hero-title">Rooted in Respect. Inspired by Nature. Built for Connection.</h1>
+        </div>
+    </header>
+
+    <!-- Image Carousel -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="images/PXL_20240306_213921516.jpg" alt="Children exploring nature at Placer Forest School">
+            </div>
+            <div class="carousel-slide">
+                <img src="images/PXL_20240325_193110753.jpg" alt="Outdoor learning environment">
+            </div>
+            <div class="carousel-slide">
+                <img src="images/PXL_20240401_185906280.MP.jpg" alt="Nature-based activities">
+            </div>
+            <div class="carousel-slide">
+                <img src="images/PXL_20240401_191554471.MP.jpg" alt="Children connecting with nature">
+            </div>
+            <div class="carousel-slide">
+                <img src="images/PXL_20240401_195231915.jpg" alt="Forest school community">
+            </div>
+        </div>
+        <div class="carousel-nav">
+            <button class="carousel-btn prev" onclick="changeSlide(-1)">&#8249;</button>
+            <button class="carousel-btn next" onclick="changeSlide(1)">&#8250;</button>
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="intro-section">
+            <div class="container">
+                <h2 class="section-title">A Nature-Based Drop-Off Program Guided by Respectful Parenting & Outdoor Learning</h2>
+                
+                <div class="intro-text">
+                    <p>Welcome to Placer Forest School — a forest school nestled in the Rocklin, CA area, offering child-led, nature-based learning for children ages 4 and up. Our program meets Fridays in a local open space rich with boulders, trees, and creeks, providing an ideal environment for exploration, movement, and discovery. (Exact location is shared upon registration for privacy and safety.)</p>
+                    
+                    <p>Our approach is inspired by educators and researchers such as Angela Hanscom (Balanced and Barefoot), Janet Lansbury (No Bad Kids), Michaeleen Doucleff (Hunt, Gather, Parent), Peter Gray (Free to Learn), and Richard Louv (Last Child in the Woods).</p>
+                    
+                    <p>We fill a vital need in the Lincoln, Roseville, and Rocklin area: a developmentally aligned drop-off program where children can:</p>
+                    
+                    <ul class="benefits-list">
+                        <li>🌱 Build resilience and self-confidence through real-world challenges</li>
+                        <li>🤝 Strengthen social-emotional skills through authentic peer relationships</li>
+                        <li>🔍 Develop focus, curiosity, and independence through hands-on play</li>
+                        <li>🌿 Cultivate a lasting bond with the natural world</li>
+                    </ul>
+                    
+                    <p class="highlight">Nature isn't just the setting — it's the teacher, the playground, and the heart of everything we do.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule Section -->
+        <section class="schedule-section">
+            <div class="container">
+                <h2 class="section-title">Program Schedule</h2>
+                <div class="schedule-card">
+                    <h3>Current Offering</h3>
+                    <p><strong>📅 Day:</strong> Fridays</p>
+                    <p><strong>🕙 Time:</strong> 10:00 AM - 3:00 PM</p>
+                    <p><strong>📍 Location:</strong> Open space in Lincoln/Rocklin, CA</p>
+                    <p><em>Exact location shared upon registration for privacy and safety</em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <h2>🌱 Ready to Learn More?</h2>
+                <p>We'd love to welcome your child into our growing forest community.</p>
+                <div class="cta-buttons">
+                    <a href="enrollment.html" class="btn btn-primary" onclick="trackEvent('click', 'CTA', 'Register Now')">Register Now</a>
+                    <a href="contact.html" class="btn btn-secondary" onclick="trackEvent('click', 'CTA', 'Contact Us')">Contact Us</a>
+                </div>
+                <div class="contact-info">
+                    <p>📞 <a href="tel:+1234567890">(123) 456-7890</a></p>
+                    <p>✉️ <a href="mailto:info@placerforestschool.com">info@placerforestschool.com</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Statement -->
+        <section class="mission-section">
+            <div class="container">
+                <h2>🌱 Mission Statement</h2>
+                <p>At Placer Forest School, our mission is to create a respectful, nature-rich learning environment where children ages 4 and up are free to explore, connect, and grow. Rooted in the principles of respectful parenting, child-led discovery, and unstructured outdoor play, we offer families in the Lincoln, Roseville, and Rocklin area a forest school experience that supports whole-child development, fosters community, and honors the wonder of childhood.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌲 Placer Forest School</h3>
+                    <p>Rooted in Respect. Inspired by Nature. Built for Connection.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📞 (123) 456-7890</p>
+                    <p>✉️ info@placerforestschool.com</p>
+                    <p>📍 Lincoln/Rocklin, CA</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Program</h3>
+                    <p>Fridays, 10 AM - 3 PM</p>
+                    <p>Ages 4 and up</p>
+                    <p>Nature-based learning</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Placer Forest School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/home-dynamic.js"></script>
+</body>
+</html>

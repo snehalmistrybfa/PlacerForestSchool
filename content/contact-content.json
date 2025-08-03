@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "title": "Contact Us - Placer Forest School",
+    "description": "Get in touch with Placer Forest School. Contact information, location details, and inquiry form for our nature-based learning program in Rocklin, CA."
+  },
+  
+  "header": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to hear from you and answer any questions about our forest school program"
+  },
+  
+  "contactInfo": {
+    "title": "Get In Touch",
+    "methods": [
+      {
+        "icon": "📞",
+        "type": "Phone",
+        "value": "(123) 456-7890",
+        "action": "tel:+1234567890",
+        "note": "Call or text for quick questions"
+      },
+      {
+        "icon": "✉️",
+        "type": "Email",
+        "value": "info@placerforestschool.com",
+        "action": "mailto:info@placerforestschool.com",
+        "note": "Email for detailed inquiries"
+      },
+      {
+        "icon": "📍",
+        "type": "Location",
+        "value": "Lincoln/Rocklin, CA Area",
+        "note": "Exact location shared upon enrollment"
+      }
+    ]
+  },
+  
+  "hours": {
+    "title": "Program Hours",
+    "schedule": [
+      {
+        "day": "Friday",
+        "time": "10:00 AM - 3:00 PM",
+        "note": "Ages 4 and up"
+      }
+    ],
+    "additionalInfo": "Please contact us to discuss your child's specific needs and our enrollment process."
+  },
+  
+  "inquiryForm": {
+    "title": "Send Us a Message",
+    "description": "Have questions about our program? Send us a message and we'll get back to you within 24 hours.",
+    "fields": [
+      {
+        "name": "parent_name",
+        "label": "Your Name",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Email Address",
+        "type": "email",
+        "required": true
+      },
+      {
+        "name": "phone",
+        "label": "Phone Number",
+        "type": "tel",
+        "required": false
+      },
+      {
+        "name": "child_age",
+        "label": "Child's Age",
+        "type": "text",
+        "required": false
+      },
+      {
+        "name": "inquiry_type",
+        "label": "Type of Inquiry",
+        "type": "select",
+        "options": [
+          "General Information",
+          "Enrollment Questions",
+          "Program Details",
+          "Schedule Information",
+          "Other"
+        ],
+        "required": true
+      },
+      {
+        "name": "message",
+        "label": "Your Message",
+        "type": "textarea",
+        "placeholder": "Please share your questions or tell us how we can help...",
+        "required": true
+      }
+    ],
+    "submitButton": "Send Message",
+    "googleForm": {
+      "actionUrl": "https://docs.google.com/forms/d/e/YOUR_CONTACT_FORM_ID/formResponse",
+      "fieldMappings": {
+        "parent_name": "entry.111111111",
+        "email": "entry.222222222",
+        "phone": "entry.333333333",
+        "child_age": "entry.444444444",
+        "inquiry_type": "entry.555555555",
+        "message": "entry.666666666"
+      }
+    }
+  },
+  
+  "faq": {
+    "title": "Quick Answers",
+    "items": [
+      {
+        "question": "What ages do you serve?",
+        "answer": "Our program is designed for children ages 4 and up. We welcome children of all developmental levels who are ready for a drop-off program."
+      },
+      {
+        "question": "What should my child wear?",
+        "answer": "Dress for the weather! We recommend layers, closed-toe shoes, and clothes that can get dirty. We provide a detailed packing list upon enrollment."
+      },
+      {
+        "question": "Do you provide snacks?",
+        "answer": "Families provide their own snacks and lunch. We'll share our guidelines for forest-friendly foods that align with our outdoor environment."
+      }
+    ]
+  }
+}

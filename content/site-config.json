@@ -1,0 +1,24 @@
+{
+  "site": {
+    "title": "Placer Forest School",
+    "logo": "🌲 Placer Forest School",
+    "tagline": "Rooted in Respect. Inspired by Nature. Built for Connection.",
+    "phone": "(123) 456-7890",
+    "email": "info@placerforestschool.com",
+    "location": "Lincoln/Rocklin, CA",
+    "googleAnalyticsId": "GA_MEASUREMENT_ID"
+  },
+  "program": {
+    "schedule": "Fridays, 10 AM - 3 PM",
+    "ageRange": "Ages 4 and up",
+    "description": "Nature-based learning"
+  },
+  "navigation": [
+    {"text": "Home", "url": "index.html"},
+    {"text": "About Us", "url": "about.html"},
+    {"text": "FAQs", "url": "faqs.html"},
+    {"text": "Resources", "url": "resources.html"},
+    {"text": "Enrollment", "url": "enrollment.html"},
+    {"text": "Contact", "url": "contact.html"}
+  ]
+}

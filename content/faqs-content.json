@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "Frequently Asked Questions - Placer Forest School",
+    "description": "Find answers to common questions about Placer Forest School's nature-based learning program, enrollment, safety, and daily activities."
+  },
+  
+  "header": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about our forest school program"
+  },
+  
+  "categories": [
+    {
+      "title": "Program Basics",
+      "icon": "🌲",
+      "questions": [
+        {
+          "question": "What is forest school?",
+          "answer": "Forest school is a child-centered educational approach that takes place in natural outdoor environments. Children engage in hands-on learning through exploration, play, and discovery in nature, developing confidence, independence, and a deep connection to the natural world."
+        },
+        {
+          "question": "What ages do you serve?",
+          "answer": "Our program welcomes children ages 4 and up. We believe this age range allows for rich peer interactions while accommodating different developmental stages and interests."
+        },
+        {
+          "question": "How long is each session?",
+          "answer": "Our Friday program runs from 10:00 AM to 3:00 PM, giving children a full day of outdoor exploration and learning while fitting into family schedules."
+        },
+        {
+          "question": "What happens in bad weather?",
+          "answer": "We believe there's no such thing as bad weather, only inappropriate clothing! We meet rain or shine, with activities adapted for weather conditions. In extreme weather situations, we may cancel for safety reasons."
+        }
+      ]
+    },
+    {
+      "title": "Safety & Supervision",
+      "icon": "🛡️",
+      "questions": [
+        {
+          "question": "How do you keep children safe outdoors?",
+          "answer": "Safety is our top priority. Our educators are trained in outdoor risk assessment, first aid, and child development. We establish clear boundaries, teach children to assess risks themselves, and maintain appropriate adult-to-child ratios."
+        },
+        {
+          "question": "What is your supervision ratio?",
+          "answer": "We maintain a low adult-to-child ratio to ensure proper supervision while allowing for independent exploration. Specific ratios depend on group size and activities."
+        },
+        {
+          "question": "Do you have emergency procedures?",
+          "answer": "Yes, we have comprehensive emergency procedures including first aid protocols, emergency contacts, and communication plans. All staff are trained in emergency response procedures."
+        }
+      ]
+    },
+    {
+      "title": "Daily Experience",
+      "icon": "🌿",
+      "questions": [
+        {
+          "question": "What does a typical day look like?",
+          "answer": "Each day is unique and child-led! We begin with a circle time for connection and planning, followed by free exploration, nature-based activities, lunch, and reflection. Children choose their own adventures within our safe boundaries."
+        },
+        {
+          "question": "What activities do children do?",
+          "answer": "Activities are entirely child-led and emerge from their interests and the natural environment. This might include fort building, creek exploration, wildlife observation, climbing, storytelling, or imaginative play."
+        },
+        {
+          "question": "Do you provide structured lessons?",
+          "answer": "We don't provide traditional structured lessons. Instead, learning happens organically through play and exploration. Our educators facilitate learning by asking open-ended questions and supporting children's natural curiosity."
+        }
+      ]
+    },
+    {
+      "title": "Practical Information",
+      "icon": "🎒",
+      "questions": [
+        {
+          "question": "What should my child bring?",
+          "answer": "Children need weather-appropriate clothing, a packed lunch and snacks, water bottle, and any personal items they might need. We provide a detailed packing list upon enrollment."
+        },
+        {
+          "question": "Where do you meet?",
+          "answer": "We meet at a beautiful natural space in the Lincoln/Rocklin area with diverse features including trees, boulders, and seasonal water features. The exact location is shared upon enrollment for privacy and safety."
+        },
+        {
+          "question": "How do I know if my child is ready?",
+          "answer": "Children who thrive in our program are typically comfortable being dropped off, curious about nature, and ready for some independence. We're happy to discuss your child's specific readiness during a consultation."
+        },
+        {
+          "question": "What is your philosophy on screen time?",
+          "answer": "Our program is completely screen-free. We believe in the power of unmediated experiences with nature and peers to support healthy development and deep learning."
+        }
+      ]
+    },
+    {
+      "title": "Enrollment & Logistics",
+      "icon": "📝",
+      "questions": [
+        {
+          "question": "How do I enroll my child?",
+          "answer": "Complete our online enrollment form, and we'll contact you within 24 hours with payment information and next steps. We'll also schedule a brief consultation to ensure our program is a good fit."
+        },
+        {
+          "question": "What are your rates?",
+          "answer": "Please contact us for current pricing information. We offer various payment options to make our program accessible to families."
+        },
+        {
+          "question": "Do you offer sibling discounts?",
+          "answer": "Yes, we offer discounted rates for siblings. Contact us to learn more about family pricing options."
+        },
+        {
+          "question": "What is your cancellation policy?",
+          "answer": "We understand that family schedules can change. Please contact us to discuss our cancellation and make-up policies, which are designed to be fair to both families and our program."
+        }
+      ]
+    }
+  ],
+  
+  "stillHaveQuestions": {
+    "title": "Still Have Questions?",
+    "description": "We're here to help! If you don't see your question answered above, please don't hesitate to reach out.",
+    "buttons": [
+      {
+        "text": "Contact Us",
+        "url": "contact.html",
+        "class": "btn btn-primary"
+      },
+      {
+        "text": "Schedule a Call",
+        "url": "tel:+1234567890",
+        "class": "btn btn-secondary"
+      }
+    ]
+  }
+}

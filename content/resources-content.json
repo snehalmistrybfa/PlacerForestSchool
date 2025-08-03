@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "title": "Resources - Placer Forest School",
+    "description": "Helpful resources for families interested in nature-based learning, outdoor education, and respectful parenting practices."
+  },
+  
+  "header": {
+    "title": "Resources for Families",
+    "subtitle": "Discover books, articles, and tools to support nature-based learning at home"
+  },
+  
+  "sections": [
+    {
+      "title": "Recommended Reading",
+      "icon": "📚",
+      "description": "Books that inspire our approach to child development and outdoor education",
+      "items": [
+        {
+          "title": "Balanced and Barefoot",
+          "author": "Angela Hanscom",
+          "description": "How unrestricted outdoor play makes for strong, confident, and capable children",
+          "link": "https://example.com/book1",
+          "category": "Child Development"
+        },
+        {
+          "title": "No Bad Kids: Toddler Discipline Without Shame",
+          "author": "Janet Lansbury",
+          "description": "A respectful approach to toddler discipline that supports healthy development",
+          "link": "https://example.com/book2",
+          "category": "Respectful Parenting"
+        },
+        {
+          "title": "Hunt, Gather, Parent",
+          "author": "Michaeleen Doucleff",
+          "description": "What ancient cultures can teach us about raising children",
+          "link": "https://example.com/book3",
+          "category": "Parenting Wisdom"
+        },
+        {
+          "title": "Free to Learn",
+          "author": "Peter Gray",
+          "description": "Why unleashing the instinct to play will make our children happier",
+          "link": "https://example.com/book4",
+          "category": "Play & Learning"
+        },
+        {
+          "title": "Last Child in the Woods",
+          "author": "Richard Louv",
+          "description": "Saving our children from nature-deficit disorder",
+          "link": "https://example.com/book5",
+          "category": "Nature Connection"
+        }
+      ]
+    },
+    {
+      "title": "Nature Activities for Home",
+      "icon": "🌿",
+      "description": "Simple ways to bring forest school principles into your daily life",
+      "items": [
+        {
+          "title": "Backyard Nature Exploration",
+          "description": "Create opportunities for discovery in your own outdoor space, no matter how small",
+          "tips": [
+            "Set up a 'sit spot' for quiet observation",
+            "Create nature art with found materials",
+            "Start a nature journal or photo collection",
+            "Build with sticks, stones, and natural materials"
+          ]
+        },
+        {
+          "title": "Seasonal Nature Activities",
+          "description": "Connect with the changing seasons through outdoor exploration",
+          "tips": [
+            "Collect and press autumn leaves",
+            "Build snow sculptures and ice decorations",
+            "Plant seeds and watch them grow in spring",
+            "Create summer nature mandalas"
+          ]
+        },
+        {
+          "title": "Urban Nature Connections",
+          "description": "Find nature opportunities in city environments",
+          "tips": [
+            "Visit local parks and green spaces",
+            "Observe urban wildlife and birds",
+            "Explore community gardens",
+            "Take nature walks in your neighborhood"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Respectful Parenting Resources",
+      "icon": "❤️",
+      "description": "Tools and strategies for supporting your child's emotional development",
+      "items": [
+        {
+          "title": "Understanding Big Emotions",
+          "description": "Supporting children through challenging emotional moments",
+          "tips": [
+            "Validate feelings before addressing behavior",
+            "Model emotional regulation yourself",
+            "Create calm-down spaces and strategies",
+            "Practice patience with the learning process"
+          ]
+        },
+        {
+          "title": "Building Independence",
+          "description": "Encouraging self-reliance while maintaining connection",
+          "tips": [
+            "Allow time for children to solve problems independently",
+            "Offer choices within appropriate boundaries",
+            "Support rather than rescue during challenges",
+            "Celebrate effort and growth over achievement"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Local Nature Spots",
+      "icon": "📍",
+      "description": "Great places for family nature exploration in the Placer County area",
+      "items": [
+        {
+          "title": "Regional Parks",
+          "locations": [
+            "Folsom Lake State Recreation Area",
+            "Auburn State Recreation Area",
+            "Hidden Falls Regional Park",
+            "Miners Ravine Nature Preserve"
+          ]
+        },
+        {
+          "title": "Nature Centers",
+          "locations": [
+            "Effie Yeaw Nature Center",
+            "Maidu Museum & Historic Site",
+            "McBean Memorial Marsh",
+            "Richardson Nature Preserve"
+          ]
+        },
+        {
+          "title": "Family-Friendly Trails",
+          "locations": [
+            "Secret Ravine Trail",
+            "Clementine Trail",
+            "Loomis Basin Trail",
+            "Stevens Trail"
+          ]
+        }
+      ]
+    }
+  ],
+  
+  "gettingStarted": {
+    "title": "Getting Started with Nature-Based Learning",
+    "description": "Simple steps to begin incorporating outdoor learning into your family life",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Start Small",
+        "description": "Begin with short outdoor explorations in your backyard or local park"
+      },
+      {
+        "number": "2", 
+        "title": "Follow Your Child's Lead",
+        "description": "Let your child's interests guide the exploration and discovery"
+      },
+      {
+        "number": "3",
+        "title": "Embrace Mess and Discovery",
+        "description": "Allow for dirt, water play, and hands-on investigation"
+      },
+      {
+        "number": "4",
+        "title": "Ask Open-Ended Questions",
+        "description": "Wonder together: 'What do you notice?' 'What happens if...?'"
+      },
+      {
+        "number": "5",
+        "title": "Be Patient",
+        "description": "Allow time for deep observation and unhurried exploration"
+      }
+    ]
+  },
+  
+  "joinCommunity": {
+    "title": "Join Our Community",
+    "description": "Connect with other families who value nature-based learning",
+    "options": [
+      {
+        "title": "Newsletter",
+        "description": "Monthly tips, activities, and updates from our forest school community",
+        "action": "Subscribe",
+        "link": "mailto:info@placerforestschool.com?subject=Newsletter Signup"
+      },
+      {
+        "title": "Family Events",
+        "description": "Special events and workshops for current and prospective families",
+        "action": "Learn More",
+        "link": "contact.html"
+      }
+    ]
+  }
+}

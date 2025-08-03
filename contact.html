@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Placer Forest School</title>
+    <meta name="description" content="Get in touch with Placer Forest School. Contact information, location details, and inquiry form for our nature-based learning program in Rocklin, CA.">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            page_title: 'Contact',
+            page_location: window.location.href
+        });
+        
+        function trackEvent(eventName, eventCategory, eventLabel) {
+            gtag('event', eventName, {
+                event_category: eventCategory,
+                event_label: eventLabel,
+                value: 1
+            });
+        }
+    </script>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Content Management System -->
+    <script src="js/content-manager.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🌲 Placer Forest School</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="faqs.html" class="nav-link">FAQs</a></li>
+                <li><a href="resources.html" class="nav-link">Resources</a></li>
+                <li><a href="enrollment.html" class="nav-link">Enrollment</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-main">
+        <div class="container">
+            <div class="page-header">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you and answer any questions about our forest school program</p>
+            </div>
+
+            <div class="contact-layout">
+                <!-- Contact Information -->
+                <section class="contact-info-section">
+                    <h2>Get In Touch</h2>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+                                <p class="contact-note">Call or text for quick questions</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@placerforestschool.com">info@placerforestschool.com</a></p>
+                                <p class="contact-note">Email for detailed inquiries</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Lincoln/Rocklin, CA Area</p>
+                                <p class="contact-note">Exact location shared upon enrollment</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Program Hours -->
+                <section class="hours-section">
+                    <h2>Program Hours</h2>
+                    <div class="schedule-info">
+                        <div class="schedule-item">
+                            <h3>Friday</h3>
+                            <p>10:00 AM - 3:00 PM</p>
+                            <p class="schedule-note">Ages 4 and up</p>
+                        </div>
+                    </div>
+                    <p>Please contact us to discuss your child's specific needs and our enrollment process.</p>
+                </section>
+
+                <!-- Contact Form -->
+                <section class="contact-form-section">
+                    <h2>Send Us a Message</h2>
+                    <p>Have questions about our program? Send us a message and we'll get back to you within 24 hours.</p>
+                    
+                    <form id="contactForm" action="https://docs.google.com/forms/d/e/YOUR_CONTACT_FORM_ID/formResponse" method="POST" target="hidden_iframe">
+                        <div class="form-group">
+                            <label for="parent_name">Your Name:</label>
+                            <input type="text" name="entry.111111111" id="parent_name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" name="entry.222222222" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" name="entry.333333333" id="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="child_age">Child's Age:</label>
+                            <input type="text" name="entry.444444444" id="child_age">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inquiry_type">Type of Inquiry:</label>
+                            <select name="entry.555555555" id="inquiry_type" required>
+                                <option value="">Select an option</option>
+                                <option value="General Information">General Information</option>
+                                <option value="Enrollment Questions">Enrollment Questions</option>
+                                <option value="Program Details">Program Details</option>
+                                <option value="Schedule Information">Schedule Information</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message:</label>
+                            <textarea name="entry.666666666" id="message" rows="5" placeholder="Please share your questions or tell us how we can help..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" onclick="trackEvent('form_submit', 'contact', 'inquiry_form')">Send Message</button>
+                    </form>
+                    
+                    <!-- Success Message -->
+                    <div id="contact-success-message" class="success-message" style="display: none;">
+                        <h3>✅ Message Sent Successfully!</h3>
+                        <p>Thank you for contacting us. We'll get back to you within 24 hours.</p>
+                    </div>
+                </section>
+
+                <!-- Quick FAQ -->
+                <section class="quick-faq-section">
+                    <h2>Quick Answers</h2>
+                    <div class="faq-items">
+                        <div class="faq-item">
+                            <h3>What ages do you serve?</h3>
+                            <p>Our program is designed for children ages 4 and up. We welcome children of all developmental levels who are ready for a drop-off program.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3>What should my child wear?</h3>
+                            <p>Dress for the weather! We recommend layers, closed-toe shoes, and clothes that can get dirty. We provide a detailed packing list upon enrollment.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h3>Do you provide snacks?</h3>
+                            <p>Families provide their own snacks and lunch. We'll share our guidelines for forest-friendly foods that align with our outdoor environment.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Hidden iframe for form submission -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(contactSubmitted){showContactSuccessMessage()}"></iframe>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌲 Placer Forest School</h3>
+                    <p>Rooted in Respect. Inspired by Nature. Built for Connection.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📞 (123) 456-7890</p>
+                    <p>✉️ info@placerforestschool.com</p>
+                    <p>📍 Lincoln/Rocklin, CA</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Program</h3>
+                    <p>Fridays, 10 AM - 3 PM</p>
+                    <p>Ages 4 and up</p>
+                    <p>Nature-based learning</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Placer Forest School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        let contactSubmitted = false;
+        
+        document.getElementById('contactForm').addEventListener('submit', function() {
+            contactSubmitted = true;
+        });
+        
+        function showContactSuccessMessage() {
+            document.getElementById('contactForm').style.display = 'none';
+            document.getElementById('contact-success-message').style.display = 'block';
+            document.getElementById('contact-success-message').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

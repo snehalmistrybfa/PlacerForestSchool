@@ -1,0 +1,181 @@
+{
+  "pageTitle": "Join Our Forest Community",
+  "pageDescription": "Complete the registration form below to enroll your child in Placer Forest School's nature-based learning program.",
+  "metaDescription": "Enroll your child in Placer Forest School's nature-based learning program. Registration form for our Friday forest school program.",
+  
+  "formSections": {
+    "programSelection": {
+      "title": "Program Selection",
+      "fields": {
+        "program": {
+          "label": "Select Program:",
+          "options": [
+            {"value": "", "text": "Choose a program"},
+            {"value": "Friday Program (10 AM - 3 PM)", "text": "Friday Program (10 AM - 3 PM)"}
+          ]
+        }
+      }
+    },
+    
+    "childInformation": {
+      "title": "Child Information",
+      "fields": {
+        "childName": {
+          "label": "Child's Full Name:"
+        },
+        "dateOfBirth": {
+          "label": "Date of Birth:"
+        },
+        "specialNeeds": {
+          "label": "Special Considerations (allergies, medical conditions, behavioral notes):",
+          "placeholder": "Please describe any allergies, medical conditions, or other important information about your child..."
+        }
+      },
+      "addChildButton": "+ Add Another Child"
+    },
+    
+    "parentInformation": {
+      "title": "Parent/Guardian Information",
+      "fields": {
+        "parentName": {
+          "label": "Parent/Guardian Name:"
+        },
+        "phone": {
+          "label": "Phone Number:"
+        },
+        "email": {
+          "label": "Email Address:"
+        },
+        "address": {
+          "label": "Home Address:",
+          "placeholder": "Street address, city, state, zip code"
+        }
+      }
+    },
+    
+    "emergencyContact": {
+      "title": "Emergency Contact",
+      "fields": {
+        "emergencyName": {
+          "label": "Emergency Contact Name:"
+        },
+        "emergencyPhone": {
+          "label": "Emergency Contact Phone:"
+        },
+        "emergencyRelationship": {
+          "label": "Relationship to Child:",
+          "placeholder": "e.g., Grandparent, Uncle, Family Friend"
+        }
+      }
+    },
+    
+    "medicalInformation": {
+      "title": "Medical Information",
+      "fields": {
+        "medicalInfo": {
+          "label": "Allergies, Medical Conditions, and Medications:",
+          "placeholder": "Please list any allergies, medical conditions, medications, or other health-related information we should know about..."
+        },
+        "dietaryRestrictions": {
+          "label": "Dietary Restrictions:",
+          "placeholder": "Please describe any dietary restrictions or food allergies..."
+        }
+      }
+    },
+    
+    "waiversAndPermissions": {
+      "title": "Waivers and Permissions",
+      "waivers": [
+        {
+          "id": "participation_waiver",
+          "title": "Ability to Participate & Assumption of Risk:",
+          "text": "I acknowledge that outdoor forest school activities involve inherent risks and that my child is physically and emotionally capable of participating in the program."
+        },
+        {
+          "id": "liability_waiver",
+          "title": "Waiver & Release of Liability:",
+          "text": "I release Placer Forest School, its instructors, and associated parties from any liability for injuries or damages that may occur during participation in the program."
+        },
+        {
+          "id": "medical_emergency",
+          "title": "Medical Emergency Authorization:",
+          "text": "I authorize Placer Forest School staff to seek emergency medical treatment for my child if needed and agree to be responsible for any associated costs."
+        }
+      ],
+      "photoPermission": {
+        "label": "Photo/Video Permission:",
+        "options": [
+          {
+            "value": "Yes, I give permission",
+            "text": "Yes, I give permission for my child to be included in photos/videos for program documentation and promotional materials"
+          },
+          {
+            "value": "No, I do not give permission",
+            "text": "No, I do not give permission for my child to be included in photos/videos"
+          }
+        ]
+      }
+    },
+    
+    "additionalInformation": {
+      "title": "Additional Information",
+      "fields": {
+        "additionalInfo": {
+          "label": "Anything else you'd like us to know about your child or family?",
+          "placeholder": "Please share any additional information that would help us better serve your child..."
+        }
+      }
+    },
+    
+    "paymentInformation": {
+      "title": "Payment Information",
+      "notices": [
+        {
+          "icon": "📋",
+          "title": "Important:",
+          "text": "Your registration is not complete until payment is received. We will contact you within 24 hours with payment details and program information."
+        },
+        {
+          "icon": "📍",
+          "title": "Location:",
+          "text": "The exact meeting location will be shared upon registration completion for privacy and safety reasons."
+        }
+      ]
+    }
+  },
+  
+  "submitButton": {
+    "text": "Submit Registration",
+    "note": "By submitting this form, you agree to our terms and conditions and privacy policy."
+  },
+  
+  "successMessage": {
+    "title": "🎉 Registration Submitted Successfully!",
+    "message": "Thank you for enrolling your child in Placer Forest School. We've received your registration and will contact you within 24 hours with payment information and program details.",
+    "contactPrompt": "If you have any immediate questions, please contact us at:"
+  },
+  
+  "googleForm": {
+    "actionUrl": "https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse",
+    "fieldMappings": {
+      "program": "entry.123456789",
+      "childName": "entry.111111111",
+      "dateOfBirth": "entry.222222222",
+      "specialNeeds": "entry.333333333",
+      "parentName": "entry.444444444",
+      "phone": "entry.555555555",
+      "email": "entry.666666666",
+      "address": "entry.777777777",
+      "emergencyName": "entry.888888888",
+      "emergencyPhone": "entry.999999999",
+      "emergencyRelationship": "entry.101010101",
+      "medicalInfo": "entry.121212121",
+      "dietaryRestrictions": "entry.131313131",
+      "participationWaiver": "entry.141414141",
+      "liabilityWaiver": "entry.151515151",
+      "medicalEmergency": "entry.161616161",
+      "photoPermission": "entry.171717171",
+      "additionalInfo": "entry.181818181"
+    }
+  }
+}

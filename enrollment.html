@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment - Placer Forest School</title>
+    <meta name="description" content="Enroll your child in Placer Forest School's nature-based learning program. Registration form for our Friday forest school program.">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            page_title: 'Enrollment',
+            page_location: window.location.href
+        });
+        
+        function trackEvent(eventName, eventCategory, eventLabel) {
+            gtag('event', eventName, {
+                event_category: eventCategory,
+                event_label: eventLabel,
+                value: 1
+            });
+        }
+    </script>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/enrollment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Content Management System -->
+    <script src="js/content-manager.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>🌲 Placer Forest School</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="faqs.html" class="nav-link">FAQs</a></li>
+                <li><a href="resources.html" class="nav-link">Resources</a></li>
+                <li><a href="enrollment.html" class="nav-link active">Enrollment</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="enrollment-main">
+        <div class="container">
+            <div class="enrollment-header">
+                <h1>Join Our Forest Community</h1>
+                <p>Complete the registration form below to enroll your child in Placer Forest School's nature-based learning program.</p>
+            </div>
+
+            <!-- Google Form Integration -->
+            <div class="form-container">
+                <!-- 
+                To integrate with Google Forms:
+                1. Create a Google Form with all the fields below
+                2. Get the form's action URL by inspecting the form HTML
+                3. Replace the action URL below with your Google Form's action URL
+                4. Update the name attributes to match your Google Form's field names
+                -->
+                <form id="enrollmentForm" action="https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse" method="POST" target="hidden_iframe">
+                    
+                    <!-- Program Selection -->
+                    <div class="form-section">
+                        <h2>Program Selection</h2>
+                        <div class="form-group">
+                            <label for="program">Select Program:</label>
+                            <select name="entry.123456789" id="program" required>
+                                <option value="">Choose a program</option>
+                                <option value="Friday Program (10 AM - 3 PM)">Friday Program (10 AM - 3 PM)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Child Information -->
+                    <div class="form-section">
+                        <h2>Child Information</h2>
+                        
+                        <div id="children-container">
+                            <div class="child-info-group" data-child="1">
+                                <h3>Child 1</h3>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="child1_name">Child's Full Name:</label>
+                                        <input type="text" name="entry.111111111" id="child1_name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="child1_dob">Date of Birth:</label>
+                                        <input type="date" name="entry.222222222" id="child1_dob" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="child1_special_needs">Special Considerations (allergies, medical conditions, behavioral notes):</label>
+                                    <textarea name="entry.333333333" id="child1_special_needs" rows="3" placeholder="Please describe any allergies, medical conditions, or other important information about your child..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button type="button" class="add-child-btn" onclick="addChild()">+ Add Another Child</button>
+                    </div>
+
+                    <!-- Parent Information -->
+                    <div class="form-section">
+                        <h2>Parent/Guardian Information</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="parent_name">Parent/Guardian Name:</label>
+                                <input type="text" name="entry.444444444" id="parent_name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="parent_phone">Phone Number:</label>
+                                <input type="tel" name="entry.555555555" id="parent_phone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="parent_email">Email Address:</label>
+                                <input type="email" name="entry.666666666" id="parent_email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Home Address:</label>
+                            <textarea name="entry.777777777" id="address" rows="3" required placeholder="Street address, city, state, zip code"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Contact -->
+                    <div class="form-section">
+                        <h2>Emergency Contact</h2>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="emergency_name">Emergency Contact Name:</label>
+                                <input type="text" name="entry.888888888" id="emergency_name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="emergency_phone">Emergency Contact Phone:</label>
+                                <input type="tel" name="entry.999999999" id="emergency_phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="emergency_relationship">Relationship to Child:</label>
+                            <input type="text" name="entry.101010101" id="emergency_relationship" required placeholder="e.g., Grandparent, Uncle, Family Friend">
+                        </div>
+                    </div>
+
+                    <!-- Medical Information -->
+                    <div class="form-section">
+                        <h2>Medical Information</h2>
+                        <div class="form-group">
+                            <label for="medical_info">Allergies, Medical Conditions, and Medications:</label>
+                            <textarea name="entry.121212121" id="medical_info" rows="4" placeholder="Please list any allergies, medical conditions, medications, or other health-related information we should know about..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="dietary_restrictions">Dietary Restrictions:</label>
+                            <textarea name="entry.131313131" id="dietary_restrictions" rows="2" placeholder="Please describe any dietary restrictions or food allergies..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Waivers and Permissions -->
+                    <div class="form-section">
+                        <h2>Waivers and Permissions</h2>
+                        
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="entry.141414141" id="participation_waiver" value="Yes" required>
+                            <label for="participation_waiver">
+                                <strong>Ability to Participate & Assumption of Risk:</strong> I acknowledge that outdoor forest school activities involve inherent risks and that my child is physically and emotionally capable of participating in the program.
+                            </label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="entry.151515151" id="liability_waiver" value="Yes" required>
+                            <label for="liability_waiver">
+                                <strong>Waiver & Release of Liability:</strong> I release Placer Forest School, its instructors, and associated parties from any liability for injuries or damages that may occur during participation in the program.
+                            </label>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" name="entry.161616161" id="medical_emergency" value="Yes" required>
+                            <label for="medical_emergency">
+                                <strong>Medical Emergency Authorization:</strong> I authorize Placer Forest School staff to seek emergency medical treatment for my child if needed and agree to be responsible for any associated costs.
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Photo/Video Permission:</label>
+                            <div class="radio-group">
+                                <input type="radio" name="entry.171717171" id="photo_yes" value="Yes, I give permission" required>
+                                <label for="photo_yes">Yes, I give permission for my child to be included in photos/videos for program documentation and promotional materials</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" name="entry.171717171" id="photo_no" value="No, I do not give permission" required>
+                                <label for="photo_no">No, I do not give permission for my child to be included in photos/videos</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional Information -->
+                    <div class="form-section">
+                        <h2>Additional Information</h2>
+                        <div class="form-group">
+                            <label for="additional_info">Anything else you'd like us to know about your child or family?</label>
+                            <textarea name="entry.181818181" id="additional_info" rows="4" placeholder="Please share any additional information that would help us better serve your child..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Payment Notice -->
+                    <div class="form-section payment-notice">
+                        <h2>Payment Information</h2>
+                        <div class="notice-box">
+                            <p><strong>📋 Important:</strong> Your registration is not complete until payment is received. We will contact you within 24 hours with payment details and program information.</p>
+                            <p><strong>📍 Location:</strong> The exact meeting location will be shared upon registration completion for privacy and safety reasons.</p>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-section">
+                        <button type="submit" class="submit-btn" onclick="trackEvent('form_submit', 'enrollment', 'registration_form')">Submit Registration</button>
+                        <p class="form-note">By submitting this form, you agree to our terms and conditions and privacy policy.</p>
+                    </div>
+                </form>
+
+                <!-- Success Message (hidden by default) -->
+                <div id="success-message" class="success-message" style="display: none;">
+                    <h2>🎉 Registration Submitted Successfully!</h2>
+                    <p>Thank you for enrolling your child in Placer Forest School. We've received your registration and will contact you within 24 hours with payment information and program details.</p>
+                    <p>If you have any immediate questions, please contact us at:</p>
+                    <p>📞 (123) 456-7890 | ✉️ info@placerforestschool.com</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Hidden iframe for form submission -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){showSuccessMessage()}"></iframe>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🌲 Placer Forest School</h3>
+                    <p>Rooted in Respect. Inspired by Nature. Built for Connection.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📞 (123) 456-7890</p>
+                    <p>✉️ info@placerforestschool.com</p>
+                    <p>📍 Lincoln/Rocklin, CA</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Program</h3>
+                    <p>Fridays, 10 AM - 3 PM</p>
+                    <p>Ages 4 and up</p>
+                    <p>Nature-based learning</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Placer Forest School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/enrollment.js"></script>
+    <script src="js/enrollment-dynamic.js"></script>
+</body>
+</html>

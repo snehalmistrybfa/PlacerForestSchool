@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "title": "Placer Forest School - Nature-Based Learning in Rocklin, CA",
+    "description": "Nature-based drop-off program for children ages 4+ in Rocklin, CA. Child-led outdoor learning inspired by respectful parenting. Fridays 10 AM - 3 PM.",
+    "keywords": "forest school, nature education, outdoor learning, Rocklin, Lincoln, Roseville, children, preschool, drop-off program",
+    "author": "Placer Forest School",
+    "openGraph": {
+      "title": "Placer Forest School - Nature-Based Learning",
+      "description": "Rooted in Respect. Inspired by Nature. Built for Connection.",
+      "url": "https://placerforestschool.com"
+    }
+  },
+  
+  "hero": {
+    "title": "Rooted in Respect. Inspired by Nature. Built for Connection."
+  },
+  
+  "carousel": {
+    "images": [
+      {
+        "src": "images/carousel-1.jpg",
+        "alt": "Children exploring outdoor learning environment"
+      },
+      {
+        "src": "images/carousel-2.jpg",
+        "alt": "Nature-based activities and discovery"
+      },
+      {
+        "src": "images/carousel-3.jpg",
+        "alt": "Forest school community connection"
+      },
+      {
+        "src": "images/carousel-4.jpg",
+        "alt": "Children engaged in hands-on nature exploration"
+      },
+      {
+        "src": "images/carousel-5.jpg",
+        "alt": "Outdoor learning and forest school activities"
+      }
+    ]
+  },
+  
+  "introSection": {
+    "title": "A Nature-Based Drop-Off Program Guided by Respectful Parenting & Outdoor Learning",
+    "paragraphs": [
+      "Welcome to Placer Forest School — a forest school nestled in the Rocklin, CA area, offering child-led, nature-based learning for children ages 4 and up. Our program meets Fridays in a local open space rich with boulders, trees, and creeks, providing an ideal environment for exploration, movement, and discovery. (Exact location is shared upon registration for privacy and safety.)",
+      "Our approach is inspired by educators and researchers such as Angela Hanscom (Balanced and Barefoot), Janet Lansbury (No Bad Kids), Michaeleen Doucleff (Hunt, Gather, Parent), Peter Gray (Free to Learn), and Richard Louv (Last Child in the Woods).",
+      "We fill a vital need in the Lincoln, Roseville, and Rocklin area: a developmentally aligned drop-off program where children can:"
+    ],
+    "benefits": [
+      {
+        "icon": "🌱",
+        "text": "Build resilience and self-confidence through real-world challenges"
+      },
+      {
+        "icon": "🤝",
+        "text": "Strengthen social-emotional skills through authentic peer relationships"
+      },
+      {
+        "icon": "🔍",
+        "text": "Develop focus, curiosity, and independence through hands-on play"
+      },
+      {
+        "icon": "🌿",
+        "text": "Cultivate a lasting bond with the natural world"
+      }
+    ],
+    "highlight": "Nature isn't just the setting — it's the teacher, the playground, and the heart of everything we do."
+  },
+  
+  "scheduleSection": {
+    "title": "Program Schedule",
+    "card": {
+      "title": "Current Offering",
+      "details": [
+        {
+          "icon": "📅",
+          "label": "Day:",
+          "value": "Fridays"
+        },
+        {
+          "icon": "🕙",
+          "label": "Time:",
+          "value": "10:00 AM - 3:00 PM"
+        },
+        {
+          "icon": "📍",
+          "label": "Location:",
+          "value": "Open space in Lincoln/Rocklin, CA"
+        }
+      ],
+      "note": "Exact location shared upon registration for privacy and safety"
+    }
+  },
+  
+  "ctaSection": {
+    "title": "🌱 Ready to Learn More?",
+    "description": "We'd love to welcome your child into our growing forest community.",
+    "buttons": [
+      {
+        "text": "Register Now",
+        "url": "enrollment.html",
+        "class": "btn btn-primary",
+        "trackingLabel": "Register Now"
+      },
+      {
+        "text": "Contact Us",
+        "url": "contact.html",
+        "class": "btn btn-secondary",
+        "trackingLabel": "Contact Us"
+      }
+    ]
+  },
+  
+  "missionSection": {
+    "title": "🌱 Mission Statement",
+    "content": "At Placer Forest School, our mission is to create a respectful, nature-rich learning environment where children ages 4 and up are free to explore, connect, and grow. Rooted in the principles of respectful parenting, child-led discovery, and unstructured outdoor play, we offer families in the Lincoln, Roseville, and Rocklin area a forest school experience that supports whole-child development, fosters community, and honors the wonder of childhood."
+  }
+}
