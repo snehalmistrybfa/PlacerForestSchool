@@ -115,65 +115,58 @@ body {
     transition: 0.3s;
 }
 
-/* Hero Header */
-.hero-header {
-    background: linear-gradient(rgba(45, 93, 61, 0.7), rgba(26, 61, 46, 0.7)),
-                url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" fill="%23f5f3f0"><path d="M0,300 C200,250 400,350 600,300 C800,250 1000,350 1200,300 L1200,400 L0,400 Z"/></svg>');
-    background-size: cover;
-    background-position: center;
-    min-height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 80px;
+/* Hero Carousel Section */
+.hero-carousel-section {
     position: relative;
-    padding: 2rem 0;
+    width: 100%;
+    margin-top: 80px; /* Account for fixed navbar */
+    background: var(--warm-cream);
 }
 
-.hero-header::before {
-    content: '';
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="%23ffffff" opacity="0.1"/><circle cx="50" cy="40" r="1.5" fill="%23ffffff" opacity="0.1"/><circle cx="80" cy="70" r="1" fill="%23ffffff" opacity="0.1"/></svg>');
+    background: linear-gradient(
+        rgba(45, 93, 61, 0.7), 
+        rgba(26, 61, 46, 0.5)
+    );
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     pointer-events: none;
 }
 
 .hero-content {
     position: relative;
-    z-index: 2;
+    z-index: 11;
+    padding: 2rem;
 }
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-size: clamp(1.5rem, 4vw, 3rem);
     color: var(--warm-cream);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     max-width: 1000px;
     margin: 0 auto;
-    line-height: 1.3;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 
 /* Carousel */
-.carousel-section {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    background: var(--warm-cream);
-}
-
 .carousel-container {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 70vh;
+    min-height: 500px;
+    max-height: 800px;
     overflow: hidden;
-    border-radius: 0;
     background: #f0f0f0;
 }
 
@@ -184,10 +177,7 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 0.8s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    transition: opacity 1s ease-in-out;
 }
 
 .carousel-slide.active {
@@ -195,12 +185,29 @@ body {
 }
 
 .carousel-slide img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     object-position: center;
+    display: block;
+    filter: brightness(0.9) contrast(1.1) saturate(1.1);
+    transition: filter 0.3s ease, transform 0.1s ease;
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.carousel-slide img:hover {
+    filter: brightness(1) contrast(1.15) saturate(1.2);
+}
+
+/* Image loading optimization */
+.carousel-slide img[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-slide img[loading="lazy"].loaded {
+    opacity: 1;
 }
 
 .carousel-nav {
@@ -211,27 +218,32 @@ body {
     justify-content: space-between;
     transform: translateY(-50%);
     padding: 0 2rem;
-    z-index: 10;
+    z-index: 15;
+    pointer-events: none;
 }
 
 .carousel-btn {
     background: rgba(45, 93, 61, 0.8);
     color: var(--warm-cream);
     border: none;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
+    backdrop-filter: blur(10px);
+    pointer-events: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .carousel-btn:hover {
     background: var(--forest-green);
-    transform: scale(1.1);
+    transform: scale(1.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .carousel-dots {
@@ -240,23 +252,30 @@ body {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 1rem;
-    z-index: 10;
+    gap: 0.8rem;
+    z-index: 15;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 90%;
 }
 
 .dot {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.4);
     cursor: pointer;
     transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(5px);
 }
 
 .dot.active,
 .dot:hover {
     background: var(--warm-cream);
-    transform: scale(1.2);
+    border-color: var(--warm-cream);
+    transform: scale(1.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /* Main Content */
@@ -1185,5 +1204,71 @@ html {
     .team-photo {
         width: 120px;
         height: 120px;
+    }
+    
+    /* Hero Carousel Mobile Styles */
+    .hero-carousel-section {
+        margin-top: 70px; /* Smaller navbar height on mobile */
+    }
+    
+    .carousel-container {
+        height: 50vh;
+        min-height: 300px;
+        max-height: 500px;
+    }
+    
+    .hero-title {
+        font-size: clamp(1.2rem, 5vw, 2rem);
+        padding: 1rem;
+        line-height: 1.3;
+    }
+    
+    .carousel-nav {
+        padding: 0 1rem;
+    }
+    
+    .carousel-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+    }
+    
+    .carousel-dots {
+        bottom: 1rem;
+        gap: 0.6rem;
+        padding: 0 1rem;
+    }
+    
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-container {
+        height: 40vh;
+        min-height: 250px;
+    }
+    
+    .hero-title {
+        font-size: clamp(1rem, 6vw, 1.5rem);
+    }
+    
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    .carousel-dots {
+        gap: 0.4rem;
+        flex-wrap: wrap;
+        max-width: 95%;
+    }
+    
+    .dot {
+        width: 8px;
+        height: 8px;
     }
 }

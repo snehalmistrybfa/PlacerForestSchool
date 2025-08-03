@@ -41,6 +41,9 @@ function initCarousel() {
     
     if (slides.length === 0) return;
     
+    // Initialize lazy loading for carousel images
+    initLazyLoading();
+    
     window.currentSlideIndex = 0;
     showSlide(window.currentSlideIndex);
     startAutoSlide();
@@ -50,7 +53,28 @@ function initCarousel() {
     if (carouselContainer) {
         carouselContainer.addEventListener('mouseenter', stopAutoSlide);
         carouselContainer.addEventListener('mouseleave', startAutoSlide);
+        
+        // Add keyboard navigation
+        carouselContainer.addEventListener('keydown', handleKeyboardNavigation);
+        carouselContainer.setAttribute('tabindex', '0');
+        
+        // Add touch support
+        addTouchSupport(carouselContainer);
     }
+}
+
+function initLazyLoading() {
+    const carouselImages = document.querySelectorAll('.carousel-slide img[loading="lazy"]');
+    
+    carouselImages.forEach(img => {
+        if (img.complete) {
+            img.classList.add('loaded');
+        } else {
+            img.addEventListener('load', () => {
+                img.classList.add('loaded');
+            });
+        }
+    });
 }
 
 // Make functions globally accessible
@@ -155,6 +179,48 @@ function stopAutoSlide() {
 
 // Make stopAutoSlide globally accessible
 window.stopAutoSlide = stopAutoSlide;
+
+function handleKeyboardNavigation(e) {
+    if (e.key === 'ArrowLeft') {
+        e.preventDefault();
+        changeSlide(-1);
+    } else if (e.key === 'ArrowRight') {
+        e.preventDefault();
+        changeSlide(1);
+    } else if (e.key === 'Escape') {
+        e.preventDefault();
+        stopAutoSlide();
+    }
+}
+
+function addTouchSupport(container) {
+    let startX = 0;
+    let endX = 0;
+    
+    container.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+    }, { passive: true });
+    
+    container.addEventListener('touchend', (e) => {
+        endX = e.changedTouches[0].clientX;
+        handleSwipe();
+    }, { passive: true });
+    
+    function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = startX - endX;
+        
+        if (Math.abs(diff) > swipeThreshold) {
+            if (diff > 0) {
+                // Swipe left - next slide
+                changeSlide(1);
+            } else {
+                // Swipe right - previous slide
+                changeSlide(-1);
+            }
+        }
+    }
+}
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

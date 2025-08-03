@@ -292,11 +292,28 @@ function updateFieldLabel(fieldId, labelText, fieldMapping) {
  * Add another child to the form
  */
 function addChild() {
+    // Limit to maximum 5 children
+    if (childCount >= 5) {
+        alert('Maximum of 5 children can be registered at once. Please contact us directly for larger families.');
+        return;
+    }
+    
     childCount++;
     const container = document.getElementById('children-container');
     const section = enrollmentContent?.formSections.childInformation;
     
     if (!container || !section) return;
+    
+    // Define the Google Form entry mappings for each child
+    const childEntryMappings = {
+        2: { name: 'entry.937247919', dob: 'entry.1451079215', special: 'entry.134974091' },
+        3: { name: 'entry.1964184372', dob: 'entry.786255925', special: 'entry.1878287042' },
+        4: { name: 'entry.2048495169', dob: 'entry.29117455', special: 'entry.704403607' },
+        5: { name: 'entry.1842832125', dob: 'entry.541212627', special: 'entry.738371058' }
+    };
+    
+    const entries = childEntryMappings[childCount];
+    if (!entries) return;
     
     const childDiv = document.createElement('div');
     childDiv.className = 'child-info-group';
@@ -307,21 +324,27 @@ function addChild() {
         <div class="form-row">
             <div class="form-group">
                 <label for="child${childCount}_name">${section.fields.childName.label}</label>
-                <input type="text" name="entry.child${childCount}_name" id="child${childCount}_name" required>
+                <input type="text" name="${entries.name}" id="child${childCount}_name" required>
             </div>
             <div class="form-group">
                 <label for="child${childCount}_dob">${section.fields.dateOfBirth.label}</label>
-                <input type="date" name="entry.child${childCount}_dob" id="child${childCount}_dob" required>
+                <input type="date" name="${entries.dob}" id="child${childCount}_dob" required>
             </div>
         </div>
         <div class="form-group">
             <label for="child${childCount}_special_needs">${section.fields.specialNeeds.label}</label>
-            <textarea name="entry.child${childCount}_special_needs" id="child${childCount}_special_needs" rows="3" placeholder="${section.fields.specialNeeds.placeholder}"></textarea>
+            <textarea name="${entries.special}" id="child${childCount}_special_needs" rows="3" placeholder="${section.fields.specialNeeds.placeholder}"></textarea>
         </div>
         <button type="button" class="remove-child-btn" onclick="removeChild(${childCount})">Remove Child</button>
     `;
     
     container.appendChild(childDiv);
+    
+    // Hide the "Add Another Child" button if we've reached the maximum
+    if (childCount >= 5) {
+        const addButton = document.querySelector('.add-child-btn');
+        if (addButton) addButton.style.display = 'none';
+    }
     
     // Track event
     if (typeof trackEvent === 'function') {
@@ -336,6 +359,16 @@ function removeChild(childNumber) {
     const childDiv = document.querySelector(`[data-child="${childNumber}"]`);
     if (childDiv) {
         childDiv.remove();
+        
+        // Update childCount to the highest remaining child number
+        const remainingChildren = document.querySelectorAll('.child-info-group');
+        childCount = remainingChildren.length;
+        
+        // Show the "Add Another Child" button if we're under the maximum
+        if (childCount < 5) {
+            const addButton = document.querySelector('.add-child-btn');
+            if (addButton) addButton.style.display = 'block';
+        }
         
         // Track event
         if (typeof trackEvent === 'function') {
