@@ -15,15 +15,15 @@
       {
         "icon": "📞",
         "type": "Phone",
-        "value": "(123) 456-7890",
+        "value": "(408) 242-0038",
         "action": "tel:+1234567890",
         "note": "Call or text for quick questions"
       },
       {
         "icon": "✉️",
         "type": "Email",
-        "value": "info@placerforestschool.com",
-        "action": "mailto:info@placerforestschool.com",
+        "value": "contact@placerforestschool.com",
+        "action": "mailto:contact@placerforestschool.com",
         "note": "Email for detailed inquiries"
       },
       {

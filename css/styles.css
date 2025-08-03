@@ -477,19 +477,19 @@ body {
 .footer {
     background: var(--deep-forest);
     color: var(--warm-cream);
-    padding: 3rem 0 1rem;
+    padding: 2rem 0 1rem;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .footer-section h3 {
     font-family: var(--font-heading);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     color: var(--sage-green);
 }
 
@@ -497,9 +497,17 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.footer-tagline {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--sage-green);
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
 .footer-bottom {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     border-top: 1px solid var(--sage-green);
     opacity: 0.8;
 }
@@ -1106,5 +1114,76 @@ html {
     .activity-sections,
     .location-sections {
         grid-template-columns: 1fr;
+    }
+}
+
+/* Team Section Styles */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.15);
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid var(--sage-green);
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-info h3 {
+    color: var(--forest-green);
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-info h4 {
+    color: var(--moss-green);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.team-info p {
+    color: #666;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 100%;
+}
+
+/* Responsive team styles */
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .team-photo {
+        width: 120px;
+        height: 120px;
     }
 }

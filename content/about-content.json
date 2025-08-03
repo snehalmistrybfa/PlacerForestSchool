@@ -1,81 +1,29 @@
 {
   "meta": {
     "title": "About Us - Placer Forest School",
-    "description": "Learn about Placer Forest School's approach to nature-based education, our philosophy, and the team behind our forest school program in Rocklin, CA."
+    "description": "Meet the team behind Placer Forest School's nature-based education program in Rocklin, CA."
   },
   
   "header": {
     "title": "About Placer Forest School",
-    "subtitle": "Nurturing children through nature-based learning and respectful parenting principles"
+    "subtitle": "Meet Our Team"
   },
   
-  "sections": [
-    {
-      "id": "philosophy",
-      "title": "Our Philosophy",
-      "content": "At Placer Forest School, we believe that children learn best when they are free to explore, discover, and connect with the natural world. Our approach is grounded in research-based practices that honor children's innate curiosity and support their natural development through unstructured outdoor play."
-    },
-    {
-      "id": "approach",
-      "title": "Our Approach",
-      "content": "We are inspired by leading educators and researchers in the field of child development and outdoor education. Our program integrates the wisdom of Angela Hanscom's sensory-rich outdoor experiences, Janet Lansbury's respectful parenting practices, and Peter Gray's insights on the importance of free play in learning.",
-      "highlights": [
-        "Child-led exploration and discovery",
-        "Risk-taking in a supportive environment", 
-        "Connection with nature as a teacher",
-        "Respect for each child's individual pace",
-        "Building confidence through real challenges"
-      ]
-    },
-    {
-      "id": "environment",
-      "title": "Our Learning Environment",
-      "content": "Our forest school meets in a beautiful open space in the Lincoln/Rocklin area, rich with natural features that invite exploration and learning. The location includes boulders for climbing, trees for shelter and imagination, and seasonal creeks that provide endless opportunities for discovery.",
-      "features": [
-        "🪨 Natural climbing structures and boulders",
-        "🌳 Diverse trees and native plants",
-        "💧 Seasonal creek and water features",
-        "🦋 Wildlife observation opportunities",
-        "🌿 Open meadows for group activities"
-      ]
-    }
-  ],
-  
   "team": {
-    "title": "Meet Our Team",
+    "title": "� Meet Our Team",
     "description": "Our educators are passionate about supporting children's natural development through outdoor learning.",
     "members": [
       {
-        "name": "Team Member Name",
+        "name": "Gosia Liro",
         "role": "Lead Forest School Educator",
-        "bio": "Bio information about team member, their background, qualifications, and passion for forest school education.",
-        "photo": "images/team-member-1.jpg"
-      }
-    ]
-  },
-  
-  "values": {
-    "title": "Our Core Values",
-    "items": [
-      {
-        "icon": "🌱",
-        "title": "Respect",
-        "description": "We honor each child as a capable, competent individual with their own unique timeline and interests."
+        "bio": "Coming Soon",
+        "photo": "images/carousel-1.jpg"
       },
       {
-        "icon": "🌿",
-        "title": "Connection",
-        "description": "We foster deep connections with nature, peers, and oneself through meaningful outdoor experiences."
-      },
-      {
-        "icon": "🦋",
-        "title": "Wonder",
-        "description": "We celebrate curiosity and maintain a sense of wonder about the natural world and learning process."
-      },
-      {
-        "icon": "🌳",
-        "title": "Growth",
-        "description": "We support holistic development - emotional, physical, social, and cognitive - through nature-based learning."
+        "name": "Alana Snyder",
+        "role": "Forest School Educator",
+        "bio": "Coming Soon",
+        "photo": "images/carousel-2.jpg"
       }
     ]
   }
