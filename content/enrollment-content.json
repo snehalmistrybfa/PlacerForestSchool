@@ -156,26 +156,26 @@
   },
   
   "googleForm": {
-    "actionUrl": "https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse",
+    "actionUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfhLKmg5axwS2wpd2OuFm61qqnT2RpVQ4vEy4ooPjCR7UCY-w/formResponse",
     "fieldMappings": {
-      "program": "entry.123456789",
-      "childName": "entry.111111111",
-      "dateOfBirth": "entry.222222222",
-      "specialNeeds": "entry.333333333",
-      "parentName": "entry.444444444",
-      "phone": "entry.555555555",
-      "email": "entry.666666666",
-      "address": "entry.777777777",
-      "emergencyName": "entry.888888888",
-      "emergencyPhone": "entry.999999999",
-      "emergencyRelationship": "entry.101010101",
-      "medicalInfo": "entry.121212121",
-      "dietaryRestrictions": "entry.131313131",
-      "participationWaiver": "entry.141414141",
-      "liabilityWaiver": "entry.151515151",
-      "medicalEmergency": "entry.161616161",
-      "photoPermission": "entry.171717171",
-      "additionalInfo": "entry.181818181"
+      "program": "entry.153991797",
+      "childName": "entry.1259515391",
+      "dateOfBirth": "entry.1904207928",
+      "specialNeeds": "entry.46770409",
+      "parentName": "entry.1760598539",
+      "phone": "entry.2010795504",
+      "email": "entry.468070000",
+      "address": "entry.928837263",
+      "emergencyName": "entry.704141376",
+      "emergencyPhone": "entry.343389045",
+      "emergencyRelationship": "entry.351445251",
+      "medicalInfo": "entry.1356648142",
+      "dietaryRestrictions": "entry.1990020228",
+      "participationWaiver": "entry.1086360565",
+      "liabilityWaiver": "entry.1086360565",
+      "medicalEmergency": "entry.1086360565",
+      "photoPermission": "entry.1344520112",
+      "additionalInfo": "entry.1527804629"
     }
   }
 }
