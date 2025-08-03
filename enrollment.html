@@ -32,8 +32,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     
-    <!-- Content Management System -->
-    <script src="js/content-manager.js"></script>
+    <!-- Content Management System - DISABLED FOR TESTING -->
+    <!-- <script src="js/content-manager.js"></script> -->
 </head>
 <body>
     <!-- Navigation -->
@@ -177,24 +177,14 @@
                     <div class="form-section">
                         <h2>Waivers and Permissions</h2>
                         
+                        <!-- Combined waivers into a single field to avoid conflicts -->
                         <div class="checkbox-group">
-                            <input type="checkbox" name="entry.1086360565" id="participation_waiver" value="Ability to Participate & Assumption of Risk: I acknowledge that outdoor forest school activities involve inherent risks and that my child is physically and emotionally capable of participating in the program." required>
-                            <label for="participation_waiver">
-                                <strong>Ability to Participate & Assumption of Risk:</strong> I acknowledge that outdoor forest school activities involve inherent risks and that my child is physically and emotionally capable of participating in the program.
-                            </label>
-                        </div>
-
-                        <div class="checkbox-group">
-                            <input type="checkbox" name="entry.1086360565" id="liability_waiver" value="Waiver & Release of Liability: I release Placer Forest School, its instructors, and associated parties from any liability for injuries or damages that may occur during participation in the program." required>
-                            <label for="liability_waiver">
-                                <strong>Waiver & Release of Liability:</strong> I release Placer Forest School, its instructors, and associated parties from any liability for injuries or damages that may occur during participation in the program.
-                            </label>
-                        </div>
-
-                        <div class="checkbox-group">
-                            <input type="checkbox" name="entry.1086360565" id="medical_emergency" value="Medical Emergency Authorization: I authorize Placer Forest School staff to seek emergency medical treatment for my child if needed and agree to be responsible for any associated costs." required>
-                            <label for="medical_emergency">
-                                <strong>Medical Emergency Authorization:</strong> I authorize Placer Forest School staff to seek emergency medical treatment for my child if needed and agree to be responsible for any associated costs.
+                            <input type="checkbox" name="entry.1086360565" id="all_waivers" value="I agree to all waivers: Ability to Participate & Assumption of Risk, Waiver & Release of Liability, and Medical Emergency Authorization" required>
+                            <label for="all_waivers">
+                                <strong>I agree to all the following:</strong>
+                                <br>• <strong>Ability to Participate & Assumption of Risk:</strong> I acknowledge that outdoor forest school activities involve inherent risks and that my child is physically and emotionally capable of participating in the program.
+                                <br>• <strong>Waiver & Release of Liability:</strong> I release Placer Forest School, its instructors, and associated parties from any liability for injuries or damages that may occur during participation in the program.
+                                <br>• <strong>Medical Emergency Authorization:</strong> I authorize Placer Forest School staff to seek emergency medical treatment for my child if needed and agree to be responsible for any associated costs.
                             </label>
                         </div>
 
@@ -277,8 +267,8 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
-    <script src="js/enrollment.js"></script>
-    <script src="js/enrollment-dynamic.js"></script>
+    <!-- Scripts disabled for testing -->
+    <!-- <script src="js/script.js"></script> -->
+    <!-- <script src="js/enrollment.js"></script> -->
 </body>
 </html>
