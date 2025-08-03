@@ -44,17 +44,21 @@
     "title": "A Nature-Based Drop-Off Program Guided by Respectful Parenting & Outdoor Learning",
     "paragraphs": [
       "Welcome to Placer Forest School — a forest school nestled in the Rocklin, CA area, offering child-led, nature-based learning for children ages 4 and up. Our program meets Fridays in a local open space rich with boulders, trees, and creeks, providing an ideal environment for exploration, movement, and discovery. (Exact location is shared upon registration for privacy and safety.)",
-      "Our approach is inspired by educators and researchers such as Angela Hanscom (Balanced and Barefoot), Janet Lansbury (No Bad Kids), Michaeleen Doucleff (Hunt, Gather, Parent), Peter Gray (Free to Learn), and Richard Louv (Last Child in the Woods).",
+      "Our school philosophy draws inspiration from leading educators and researchers in the fields of child development, nature-based learning, and respectful parenting. You can explore these influential voices and their work in our <a href=\"resources.html\" class=\"text-link\">resources section</a>.",
       "We fill a vital need in the Lincoln, Roseville, and Rocklin area: a developmentally aligned drop-off program where children can:"
     ],
     "benefits": [
       {
-        "icon": "🌱",
-        "text": "Build resilience and self-confidence through real-world challenges"
-      },
-      {
         "icon": "🤝",
         "text": "Strengthen social-emotional skills through authentic peer relationships"
+      },
+      {
+        "icon": "🏃",
+        "text": "Exercise physical strength and coordination through movement across varied terrain"
+      },
+      {
+        "icon": "🎨",
+        "text": "Create with natural materials in imaginative ways"
       },
       {
         "icon": "🔍",
@@ -87,6 +91,11 @@
           "icon": "📍",
           "label": "Location:",
           "value": "Open space in Lincoln/Rocklin, CA"
+        },
+        {
+          "icon": "📆",
+          "label": "Session:",
+          "value": "12-week session starting September 19th"
         }
       ],
       "note": "Exact location shared upon registration for privacy and safety"
