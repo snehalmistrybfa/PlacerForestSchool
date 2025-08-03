@@ -224,7 +224,7 @@ window.showSuccessMessage = showSuccessMessage;
 function addChild() {
     // This would add additional child forms
     // For now, just show a message
-    alert('Multiple child enrollment: Please contact us directly at (408) 242-0038 for registering multiple children.');
+    alert('Multiple child enrollment: Please contact us directly at (916) 258-5035 for registering multiple children.');
 }
 
 // Make addChild globally accessible for the button onclick
