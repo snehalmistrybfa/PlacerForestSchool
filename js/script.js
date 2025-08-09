@@ -39,8 +39,6 @@ function initCarousel() {
     slides = document.querySelectorAll('.carousel-slide');
     dots = document.querySelectorAll('.dot');
     
-    console.log('Carousel initialized with', slides.length, 'slides and', dots.length, 'dots');
-    
     if (slides.length === 0) return;
     
     // Initialize lazy loading for carousel images
@@ -89,8 +87,6 @@ function showSlide(index) {
     // Refresh slides and dots in case they were updated
     slides = document.querySelectorAll('.carousel-slide');
     dots = document.querySelectorAll('.dot');
-    
-    console.log('Showing slide', index + 1, 'of', slides.length);
     
     // Hide all slides
     slides.forEach(slide => slide.classList.remove('active'));
@@ -170,9 +166,8 @@ function startAutoSlide() {
     
     autoSlideInterval = setInterval(() => {
         window.currentSlideIndex = (window.currentSlideIndex + 1) % slides.length;
-        console.log('Auto-advancing to slide', window.currentSlideIndex + 1, 'of', slides.length);
         showSlide(window.currentSlideIndex);
-    }, 2000); // Change slide every 2 seconds for testing
+    }, 5000); // Change slide every 5 seconds
 }
 
 function stopAutoSlide() {
