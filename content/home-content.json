@@ -34,8 +34,20 @@
         "alt": "Children engaged in hands-on nature exploration"
       },
       {
-        "src": "images/carousel-5.jpg",
-        "alt": "Outdoor learning and forest school activities"
+        "src": "images/carousel-7.jpg",
+        "alt": "Forest exploration and discovery"
+      },
+      {
+        "src": "images/carousel-8.jpg",
+        "alt": "Nature-based learning activities"
+      },
+      {
+        "src": "images/carousel-9.jpg",
+        "alt": "Children in forest setting"
+      },
+      {
+        "src": "images/carousel-10.jpg",
+        "alt": "Outdoor education and nature connection"
       }
     ]
   },
@@ -50,23 +62,23 @@
     "benefits": [
       {
         "icon": "🤝",
-        "text": "Strengthen social-emotional skills through authentic peer relationships"
-      },
-      {
-        "icon": "🏃",
-        "text": "Exercise physical strength and coordination through movement across varied terrain"
+        "text": "Social-Emotional Growth – child-led games and group activities that build cooperation, confidence, and authentic peer connections."
       },
       {
         "icon": "🎨",
-        "text": "Create with natural materials in imaginative ways"
+        "text": "Nature-Inspired Art & Science – hands-on projects using natural materials and real-world discoveries to spark creativity and curiosity."
       },
       {
-        "icon": "🔍",
-        "text": "Develop focus, curiosity, and independence through hands-on play"
+        "icon": "🏃",
+        "text": "Physical Strength & Coordination – active movement and play across varied outdoor terrain to develop agility, balance, and resilience."
       },
       {
         "icon": "🌿",
-        "text": "Cultivate a lasting bond with the natural world"
+        "text": "Connection with Nature & Each Other – long-term, regular sessions that nurture deep relationships and a true sense of belonging to the natural world and community."
+      },
+      {
+        "icon": "🪁",
+        "text": "Self-Directed Play & Exploration – honoring children’s innate need for play as a source of therapy, self-expression, and joyful learning."
       }
     ],
     "highlight": "Nature isn't just the setting — it's the teacher, the playground, and the heart of everything we do."

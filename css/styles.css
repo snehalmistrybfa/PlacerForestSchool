@@ -18,8 +18,8 @@
     --sunset-orange: #d2691e;
     
     /* Typography */
-    --font-heading: 'Merriweather', serif;
-    --font-body: 'Open Sans', sans-serif;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Lato', sans-serif;
     
     /* Spacing */
     --section-padding: 4rem 0;
@@ -30,7 +30,10 @@ body {
     font-family: var(--font-body);
     line-height: 1.6;
     color: var(--deep-forest);
-    background-color: var(--warm-cream);
+    background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Creates a nice parallax effect */
     scroll-behavior: smooth;
 }
 
@@ -42,7 +45,8 @@ body {
 
 /* Navigation */
 .navbar {
-    background: linear-gradient(135deg, var(--forest-green), var(--deep-forest));
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
     padding: 1rem 0;
     position: fixed;
     top: 0;
@@ -129,10 +133,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-        rgba(45, 93, 61, 0.7), 
-        rgba(26, 61, 46, 0.5)
-    );
+    background: rgba(0, 0, 0, 0.3); /* Reduced darkness */
     z-index: 10;
     display: flex;
     align-items: center;
@@ -149,14 +150,25 @@ body {
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: clamp(1.5rem, 4vw, 3rem);
+    font-size: clamp(2rem, 5vw, 4rem); /* Larger font size */
     color: var(--warm-cream);
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 1rem; /* Add margin to the bottom */
     line-height: 1.2;
-    font-weight: 300;
+    font-weight: 700; /* Bolder */
     letter-spacing: 1px;
+}
+
+.hero-tagline {
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    color: var(--warm-cream);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+    text-transform: none; /* Ensure tagline is not capitalized */
 }
 
 /* Carousel */
@@ -279,6 +291,17 @@ body {
 }
 
 /* Main Content */
+.main-content > section {
+    background: rgba(245, 243, 240, 0.95); /* Slightly transparent warm cream */
+    margin: 2rem auto;
+    padding: var(--section-padding);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    max-width: 1200px;
+}
+
 .main-content {
     padding-top: 0;
 }
@@ -307,7 +330,7 @@ body {
 /* Intro Section */
 .intro-section {
     padding: var(--section-padding);
-    background: var(--warm-cream);
+    background: transparent;
 }
 
 .intro-text {
@@ -362,7 +385,7 @@ body {
 /* Schedule Section */
 .schedule-section {
     padding: var(--section-padding);
-    background: linear-gradient(135deg, rgba(122, 158, 122, 0.1), rgba(79, 121, 66, 0.1));
+    background: transparent;
 }
 
 .schedule-card {
@@ -396,8 +419,8 @@ body {
 /* CTA Section */
 .cta-section {
     padding: var(--section-padding);
-    background: linear-gradient(135deg, var(--forest-green), var(--deep-forest));
-    color: var(--warm-cream);
+    background: transparent;
+    color: var(--deep-forest);
     text-align: center;
 }
 
@@ -405,7 +428,7 @@ body {
     font-family: var(--font-heading);
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: var(--warm-cream);
+    color: var(--forest-green);
 }
 
 .cta-section p {
@@ -451,13 +474,13 @@ body {
 
 .btn-secondary {
     background: transparent;
-    color: var(--warm-cream);
-    border: 2px solid var(--warm-cream);
+    color: var(--forest-green);
+    border: 2px solid var(--forest-green);
 }
 
 .btn-secondary:hover {
-    background: var(--warm-cream);
-    color: var(--forest-green);
+    background: var(--forest-green);
+    color: var(--warm-cream);
     transform: translateY(-2px);
 }
 
@@ -471,7 +494,7 @@ body {
 }
 
 .contact-info a {
-    color: var(--warm-cream);
+    color: var(--deep-forest);
     text-decoration: none;
 }
 
@@ -482,7 +505,7 @@ body {
 /* Mission Section */
 .mission-section {
     padding: var(--section-padding);
-    background: var(--warm-cream);
+    background: transparent;
     text-align: center;
 }
 
@@ -509,6 +532,9 @@ body {
     background: var(--deep-forest);
     color: var(--warm-cream);
     padding: 2rem 0 1rem;
+    border-radius: 15px 15px 0 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer-content {
@@ -545,6 +571,10 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .main-content > section {
+        border-radius: 0;
+        margin: 1rem 0;
+    }
     .hamburger {
         display: flex;
     }
@@ -582,6 +612,10 @@ body {
         transform: translateY(-8px) rotate(-45deg);
     }
     
+    .main-content > section {
+        border-radius: 0;
+    }
+
     .hero-header {
         min-height: 15vh;
         margin-top: 70px;
@@ -690,6 +724,7 @@ html {
     body {
         background: white;
         color: black;
+        background-image: none;
     }
 }
 
@@ -699,6 +734,16 @@ html {
     padding: var(--section-padding);
 }
 
+.page-main > .container > section {
+    background: rgba(245, 243, 240, 0.95); /* Slightly transparent warm cream */
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 .page-header {
     text-align: center;
     margin-bottom: 3rem;
@@ -706,17 +751,26 @@ html {
 
 .page-header h1 {
     font-family: var(--font-heading);
-    font-size: 2.5rem;
-    color: var(--forest-green);
+    font-size: 3rem;
+    color: var(--warm-cream);
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
     margin-bottom: 1rem;
 }
 
 .page-header p {
     font-size: 1.2rem;
-    color: var(--moss-green);
+    color: var(--warm-cream);
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
     max-width: 600px;
     margin: 0 auto;
 }
+
+.resource-section > h2, .resource-section > p,
+.faq-category > .category-header > h2 {
+    color: var(--warm-cream);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
 
 /* Contact Page Styles */
 .contact-layout {
@@ -890,12 +944,9 @@ html {
     margin-bottom: 1rem;
 }
 
-.section-icon {
-    font-size: 2rem;
-}
-
 .section-header h2 {
-    color: var(--forest-green);
+    color: var(--warm-cream);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     font-family: var(--font-heading);
 }
 

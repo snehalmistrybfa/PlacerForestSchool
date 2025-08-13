@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 window.currentSlideIndex = 0;
 let slides, dots;
 let autoSlideInterval;
+let autoSlideTimeout;
 
 function initCarousel() {
     slides = document.querySelectorAll('.carousel-slide');
@@ -138,7 +139,7 @@ function changeSlide(direction) {
     }
     
     // Restart auto-slide after a delay
-    setTimeout(startAutoSlide, 5000);
+    autoSlideTimeout = setTimeout(startAutoSlide, 5000);
 }
 
 function currentSlide(index) {
@@ -155,7 +156,7 @@ function currentSlide(index) {
     }
     
     // Restart auto-slide after a delay
-    setTimeout(startAutoSlide, 5000);
+    autoSlideTimeout = setTimeout(startAutoSlide, 5000);
 }
 
 function startAutoSlide() {
@@ -164,6 +165,9 @@ function startAutoSlide() {
     
     if (slides.length <= 1) return;
     
+    // Clear existing interval before starting a new one
+    stopAutoSlide();
+
     autoSlideInterval = setInterval(() => {
         window.currentSlideIndex = (window.currentSlideIndex + 1) % slides.length;
         showSlide(window.currentSlideIndex);
@@ -174,6 +178,10 @@ function stopAutoSlide() {
     if (autoSlideInterval) {
         clearInterval(autoSlideInterval);
         autoSlideInterval = null;
+    }
+    if (autoSlideTimeout) {
+        clearTimeout(autoSlideTimeout);
+        autoSlideTimeout = null;
     }
 }
 
