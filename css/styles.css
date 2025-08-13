@@ -64,10 +64,22 @@ body {
     align-items: center;
 }
 
-.nav-logo h2 {
+.nav-logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav-logo img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-logo .logo-text {
     color: var(--warm-cream);
     font-family: var(--font-heading);
     font-size: 1.5rem;
+    margin-left: 10px;
 }
 
 .nav-menu {
@@ -578,6 +590,25 @@ body {
     font-family: var(--font-heading);
     margin-bottom: 0.5rem;
     color: var(--sage-green);
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.footer-logo img {
+    height: 40px;
+    width: auto;
+}
+
+.footer-logo .logo-text {
+    color: var(--sage-green);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-left: 10px;
 }
 
 .footer-section p {
