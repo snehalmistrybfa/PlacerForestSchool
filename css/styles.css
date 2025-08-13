@@ -363,23 +363,53 @@ body {
 }
 
 .benefits-list li {
-    padding: 0.8rem 0;
+    padding: 0.4rem 0;
     font-size: 1.1rem;
-    border-left: 4px solid var(--sage-green);
-    padding-left: 1.5rem;
+    padding-left: 2.5rem;
     margin-bottom: 0.5rem;
-    background: rgba(122, 158, 122, 0.1);
-    border-radius: 0 8px 8px 0;
+    position: relative;
+    background: none;
+    border: none;
 }
 
-.highlight {
-    background: linear-gradient(120deg, rgba(122, 158, 122, 0.2) 0%, rgba(122, 158, 122, 0.1) 100%);
+.benefits-list li::before {
+    content: "🦉";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: var(--forest-green);
+}
+
+/* Quotes Section */
+.quotes-container {
+    max-width: 800px;
+    margin: 2rem auto 0;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.quote-item {
+    background: rgba(255, 255, 255, 0.8);
     padding: 1.5rem;
-    border-radius: 10px;
+    border-radius: 12px;
     border-left: 5px solid var(--sage-green);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.quote-item p {
     font-style: italic;
-    font-weight: 500;
-    margin-top: 2rem;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.quote-item .author {
+    font-weight: bold;
+    color: var(--forest-green);
+    text-align: right;
 }
 
 /* Schedule Section */
@@ -1024,7 +1054,7 @@ html {
 }
 
 .activity-list li:before {
-    content: "🌿";
+    content: "🦉";
     position: absolute;
     left: 0;
 }

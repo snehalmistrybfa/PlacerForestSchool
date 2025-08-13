@@ -81,7 +81,21 @@
         "text": "Self-Directed Play & Exploration – honoring children’s innate need for play as a source of therapy, self-expression, and joyful learning."
       }
     ],
-    "highlight": "Nature isn't just the setting — it's the teacher, the playground, and the heart of everything we do."
+    "highlight": "",
+    "quotes": [
+      {
+        "text": "Nature-deficit disorder is a phrase I coined to describe the human costs of alienation from nature, among them: diminished use of the senses, attention difficulties, and higher rates of physical and emotional illnesses.",
+        "author": "Richard Louv, Last Child in the Woods"
+      },
+      {
+        "text": "The outdoors is a child’s ‘classroom’ where they learn how to problem-solve, be creative, and develop perseverance.",
+        "author": "Angela Hanscom, Balanced and Barefoot"
+      },
+      {
+        "text": "If we love our children and want them to thrive, we must allow them more time and opportunity to play, not less.",
+        "author": "Dr. Peter Gray"
+      }
+    ]
   },
   
   "scheduleSection": {

@@ -131,7 +131,7 @@ function updateIntroSection() {
     // Add benefits list
     introHTML += '<ul class="benefits-list">';
     section.benefits.forEach(benefit => {
-        introHTML += `<li>${benefit.icon} ${benefit.text}</li>`;
+        introHTML += `<li> ${benefit.text}</li>`;
     });
     introHTML += '</ul>';
     
@@ -139,6 +139,17 @@ function updateIntroSection() {
     introHTML += `<p class="highlight">${section.highlight}</p>`;
     
     introText.innerHTML = introHTML;
+    
+    // Populate Quotes Section
+    const quotesContainer = document.querySelector('.quotes-container');
+    if (quotesContainer && section.quotes) {
+        quotesContainer.innerHTML = section.quotes.map(quote => `
+            <div class="quote-item">
+                <p>${quote.text}</p>
+                <p class="author">— ${quote.author}</p>
+            </div>
+        `).join('');
+    }
 }
 
 /**
