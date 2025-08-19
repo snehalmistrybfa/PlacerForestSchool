@@ -73,7 +73,6 @@ function populatePricingSection() {
                 <h3 class="early-bird-title">${pricing.earlyBird.title}</h3>
                 <div class="early-bird-highlight-enrollment">
                     <p class="highlight-text">${pricing.earlyBird.highlight}</p>
-                    <p class="urgency-text">${pricing.earlyBird.urgency}</p>
                 </div>
             </div>
             

@@ -1,14 +1,14 @@
 {
   "pageTitle": "Join Our Forest Community",
-  "pageDescription": "Complete the registration form below to enroll your child in Placer Forest School's nature-based learning program for children ages 4-12 years old. Serving families in Rocklin, Lincoln, Loomis, and Roseville, CA.",
+  "pageDescription": "How to Register:\n\n1. Complete the registration form below\n2. You will receive an email with Venmo information to secure your child's spot and details for paying the remaining tuition",
   "metaDescription": "Enroll your child in Placer Forest School's nature-based learning program. Forest school registration for families in Rocklin, Lincoln, Loomis, and Roseville, CA.",
+  "seoKeywords": "Enroll your child in Placer Forest School's nature-based learning program for children ages 4-12 years old. Serving families in Rocklin, Lincoln, Loomis, and Roseville, CA.",
   
   "pricingSection": {
-    "title": "🌿 Program Details & Early Registration Special",
+    "title": "🌿 Program Details & Registration Special",
     "earlyBird": {
-      "title": "🎉 Limited Time: Register by August 31st - Save $80!",
-      "highlight": "Register by the end of August for just $40! This registration fee will be applied toward your tuition, plus you'll receive an additional $40 discount - that's a total savings of $80!",
-      "urgency": "Only a few days left to save $80!"
+      "title": "Special Offer: Register by August 31st - Save $80",
+      "highlight": "Reserve your child's spot now! We are waiving the $40 registration fee and applying the $40 Venmo payment toward tuition - a total savings of $80."
     },
     "pricing": {
       "title": "🌱 Program Cost",
