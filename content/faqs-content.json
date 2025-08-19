@@ -20,7 +20,7 @@
         },
         {
           "question": "What ages do you serve?",
-          "answer": "Our program welcomes children ages 4 and up, with the belief that mixed-age groups offer rich opportunities for learning and growth. Older children develop leadership and empathy, while younger ones bring creativity, curiosity, and fresh perspective. Together, they create a dynamic environment where diverse developmental stages and interests are supported through collaboration and play."
+          "answer": "Our program welcomes elementary-aged children from 4 to 12 years old, with the belief that mixed-age groups offer rich opportunities for learning and growth. Older children develop leadership and empathy, while younger ones bring creativity, curiosity, and fresh perspective. Together, they create a dynamic environment where diverse developmental stages and interests are supported through collaboration and play."
         },
         {
           "question": "How long is each session?",
@@ -100,11 +100,19 @@
         },
         {
           "question": "What are your rates?",
-          "answer": "Please contact us for current pricing information. We offer various payment options to make our program accessible to families."
+          "answer": "Our program costs $11.50 per hour, per child. With 5 hours per week for our 12-week session, the total cost is $690 per child. Register by August 31st for an early bird special - just $40 to reserve your spot (this fee applies toward tuition plus you save an additional $40, for a total savings of $80!). We also offer a 10% sibling discount for families with multiple children."
         },
         {
           "question": "Do you offer sibling discounts?",
-          "answer": "Yes, we offer discounted rates for siblings. Contact us to learn more about family pricing options."
+          "answer": "Yes! We offer a 10% discount on tuition for each additional sibling enrolled in our program. This makes our nature-based education more accessible for larger families."
+        },
+        {
+          "question": "Do you accept charter school funding?",
+          "answer": "Yes, we work with families who want to use charter school funds for our program. Please email us at placerforestschool@gmail.com with information about your kids and which charter school you use so we can help set this up."
+        },
+        {
+          "question": "What is the early bird special?",
+          "answer": "Register by August 31st and pay just $40 to secure your child's spot! This registration fee will be applied toward your tuition, and you'll receive an additional $40 discount - that's a total savings of $80. Don't miss this limited-time offer!"
         },
         {
           "question": "What is your cancellation policy?",

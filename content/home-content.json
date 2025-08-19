@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Placer Forest School - Nature-Based Learning in Rocklin, CA",
-    "description": "Nature-based drop-off program for children ages 4+ in Rocklin, CA. Child-led outdoor learning inspired by respectful parenting. Fridays 10 AM - 3 PM.",
+    "description": "Nature-based drop-off program for elementary-aged children (4-12 years) in Rocklin, CA. Child-led outdoor learning inspired by respectful parenting. Fridays 10 AM - 3 PM. Early bird special available!",
     "keywords": "forest school, nature education, outdoor learning, Rocklin, Lincoln, Roseville, children, preschool, drop-off program",
     "author": "Placer Forest School",
     "openGraph": {
@@ -55,7 +55,7 @@
   "introSection": {
     "title": "A Nature-Based Drop-Off Program Guided by Respectful Parenting & Outdoor Learning",
     "paragraphs": [
-      "Welcome to Placer Forest School — a forest school nestled in the Rocklin, CA area, offering child-led, nature-based learning for children ages 4 and up. Our program meets Fridays in a local open space rich with boulders, trees, and creeks, providing an ideal environment for exploration, movement, and discovery. (Exact location is shared upon registration for privacy and safety.)",
+      "Welcome to Placer Forest School — a forest school nestled in the Rocklin, CA area, offering child-led, nature-based learning for children ages 4 to 12 years old. Our program meets Fridays in a local open space rich with boulders, trees, and creeks, providing an ideal environment for exploration, movement, and discovery. (Exact location is shared upon registration for privacy and safety.)",
       "Our school philosophy draws inspiration from leading educators and researchers in the fields of child development, nature-based learning, and respectful parenting. You can explore these influential voices and their work in our <a href=\"resources.html\" class=\"text-link\">resources section</a>.",
       "We fill a vital need in the Lincoln, Roseville, and Rocklin area: a developmentally aligned drop-off program where children can:"
     ],
@@ -99,7 +99,7 @@
   },
   
   "scheduleSection": {
-    "title": "Program Schedule",
+    "title": "Program Schedule & Pricing",
     "card": {
       "title": "Current Offering",
       "details": [
@@ -114,6 +114,11 @@
           "value": "10:00 AM - 3:00 PM"
         },
         {
+          "icon": "👦👧",
+          "label": "Ages:",
+          "value": "4 to 12 years old"
+        },
+        {
           "icon": "📍",
           "label": "Location:",
           "value": "Open space in Lincoln/Rocklin, CA"
@@ -122,9 +127,36 @@
           "icon": "📆",
           "label": "Session:",
           "value": "12-week session starting September 19th"
+        },
+        {
+          "icon": "🌱",
+          "label": "Cost:",
+          "value": "$11.50/hour per child (5 hours/week)"
         }
       ],
       "note": "Exact location shared upon registration for privacy and safety"
+    },
+    "pricing": {
+      "title": "🎉 Early Bird Special - Register by August 31st!",
+      "highlight": "Register by the end of August for just $40! This registration fee will be applied toward your tuition, plus you'll receive an additional $40 discount - that's a total savings of $80!",
+      "details": [
+        {
+          "icon": "🌿",
+          "text": "Save $80 total when you register by August 31st!"
+        },
+        {
+          "icon": "👨‍👩‍👧‍👦",
+          "text": "10% off tuition for each additional sibling"
+        },
+        {
+          "icon": "📋",
+          "text": "Charter school funds accepted - check enrollment for details"
+        },
+        {
+          "icon": "🔗",
+          "text": "<a href='enrollment.html' class='pricing-link'>View full pricing details on enrollment page →</a>"
+        }
+      ]
     }
   },
   
@@ -149,6 +181,6 @@
   
   "missionSection": {
     "title": "🌱 Mission Statement",
-    "content": "At Placer Forest School, our mission is to create a respectful, nature-rich learning environment where children ages 4 and up are free to explore, connect, and grow. Rooted in the principles of respectful parenting, child-led discovery, and unstructured outdoor play, we offer families in the Lincoln, Roseville, and Rocklin area a forest school experience that supports whole-child development, fosters community, and honors the wonder of childhood."
+    "content": "At Placer Forest School, our mission is to create a respectful, nature-rich learning environment where children ages 4 to 12 years old are free to explore, connect, and grow. Rooted in the principles of respectful parenting, child-led discovery, and unstructured outdoor play, we offer families in the Lincoln, Roseville, and Rocklin area a forest school experience that supports whole-child development, fosters community, and honors the wonder of childhood."
   }
 }

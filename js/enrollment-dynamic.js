@@ -33,6 +33,9 @@ function populateEnrollmentContent() {
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) metaDescription.setAttribute('content', enrollmentContent.metaDescription);
 
+    // Populate pricing section
+    populatePricingSection();
+
     // Update form action URL
     const form = document.getElementById('enrollmentForm');
     if (form) {
@@ -51,6 +54,56 @@ function populateEnrollmentContent() {
 
     // Update success message
     populateSuccessMessage();
+}
+
+/**
+ * Populate pricing section
+ */
+function populatePricingSection() {
+    const pricingSection = document.getElementById('pricing-section');
+    if (!pricingSection || !enrollmentContent.pricingSection) return;
+
+    const pricing = enrollmentContent.pricingSection;
+    
+    pricingSection.innerHTML = `
+        <div class="pricing-card">
+            <h2 class="pricing-main-title">${pricing.title}</h2>
+            
+            <div class="early-bird-section">
+                <h3 class="early-bird-title">${pricing.earlyBird.title}</h3>
+                <div class="early-bird-highlight-enrollment">
+                    <p class="highlight-text">${pricing.earlyBird.highlight}</p>
+                    <p class="urgency-text">${pricing.earlyBird.urgency}</p>
+                </div>
+            </div>
+            
+            <div class="pricing-details-section">
+                <h3 class="pricing-subtitle">${pricing.pricing.title}</h3>
+                <div class="cost-breakdown">
+                    <p class="rate">${pricing.pricing.rate}</p>
+                    <p class="weekly">${pricing.pricing.weekly}</p>
+                    <p class="session-total">${pricing.pricing.session}</p>
+                </div>
+                
+                <div class="discounts-section">
+                    ${pricing.pricing.discounts.map(discount => `
+                        <div class="discount-item">
+                            <span class="discount-icon">${discount.icon}</span>
+                            <div class="discount-content">
+                                <h4>${discount.title}</h4>
+                                <p>${discount.description}</p>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+            
+            <div class="age-range-section">
+                <h3>${pricing.ageRange.title}</h3>
+                <p>${pricing.ageRange.description}</p>
+            </div>
+        </div>
+    `;
 }
 
 /**

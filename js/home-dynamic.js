@@ -176,6 +176,26 @@ function updateScheduleSection() {
     
     cardHTML += `<p><em>${section.card.note}</em></p>`;
     
+    // Add pricing section if it exists
+    if (section.pricing) {
+        cardHTML += `
+            <div class="pricing-section">
+                <h3 class="pricing-title">${section.pricing.title}</h3>
+                <div class="early-bird-highlight">
+                    <p class="highlight-text">${section.pricing.highlight}</p>
+                </div>
+                <div class="pricing-details">
+                    ${section.pricing.details.map(detail => `
+                        <div class="pricing-item">
+                            <span class="pricing-icon">${detail.icon}</span>
+                            <span class="pricing-text">${detail.text}</span>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+        `;
+    }
+    
     scheduleCard.innerHTML = cardHTML;
 }
 

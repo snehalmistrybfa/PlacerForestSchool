@@ -1,4 +1,195 @@
 /* Enrollment Page Specific Styles */
+
+/* Pricing Section for Enrollment Page */
+.pricing-section-enrollment {
+    max-width: 900px;
+    margin: 0 auto 3rem auto;
+    padding: 0 1rem;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    border-top: 6px solid var(--sunset-orange);
+}
+
+.pricing-main-title {
+    font-family: var(--font-heading);
+    color: var(--forest-green);
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.pricing-main-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: var(--sunset-orange);
+    border-radius: 2px;
+}
+
+.early-bird-section {
+    margin-bottom: 2.5rem;
+}
+
+.early-bird-title {
+    font-family: var(--font-heading);
+    color: var(--sunset-orange);
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.early-bird-highlight-enrollment {
+    background: linear-gradient(135deg, var(--sunset-orange), #ff8c42);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(210, 105, 30, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.early-bird-highlight-enrollment::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+    transform: rotate(45deg);
+    animation: shimmer 4s infinite;
+}
+
+.highlight-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.urgency-text {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    opacity: 0.95;
+}
+
+.pricing-details-section {
+    background: rgba(122, 158, 122, 0.08);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.pricing-subtitle {
+    font-family: var(--font-heading);
+    color: var(--forest-green);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.cost-breakdown {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid var(--sage-green);
+}
+
+.cost-breakdown p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: var(--deep-forest);
+}
+
+.rate {
+    font-weight: 600;
+    color: var(--forest-green);
+    font-size: 1.3rem !important;
+}
+
+.session-total {
+    font-weight: 700;
+    color: var(--sunset-orange);
+    font-size: 1.2rem !important;
+    border-top: 1px solid #eee;
+    padding-top: 0.5rem;
+    margin-top: 0.5rem !important;
+}
+
+.discounts-section {
+    display: grid;
+    gap: 1rem;
+}
+
+.discount-item {
+    display: flex;
+    align-items: flex-start;
+    background: white;
+    padding: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.discount-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.discount-icon {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.discount-content h4 {
+    color: var(--forest-green);
+    margin-bottom: 0.3rem;
+    font-size: 1.1rem;
+}
+
+.discount-content p {
+    color: var(--deep-forest);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.age-range-section {
+    text-align: center;
+    background: rgba(45, 93, 61, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.age-range-section h3 {
+    color: var(--forest-green);
+    font-family: var(--font-heading);
+    margin-bottom: 0.5rem;
+}
+
+.age-range-section p {
+    color: var(--deep-forest);
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 500;
+}
+
 .enrollment-main {
     margin-top: 80px;
     padding: 2rem 0;
@@ -472,5 +663,88 @@
     
     .form-section {
         border-bottom-width: 2px;
+    }
+}
+
+/* Mobile Responsiveness for Pricing Section */
+@media (max-width: 768px) {
+    .pricing-section-enrollment {
+        margin-bottom: 2rem;
+        padding: 0 0.5rem;
+    }
+    
+    .pricing-card {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
+    
+    .pricing-main-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .early-bird-title {
+        font-size: 1.3rem;
+    }
+    
+    .early-bird-highlight-enrollment {
+        padding: 1.2rem;
+    }
+    
+    .highlight-text {
+        font-size: 1.1rem;
+    }
+    
+    .pricing-details-section {
+        padding: 1.5rem;
+    }
+    
+    .cost-breakdown {
+        padding: 1.2rem;
+    }
+    
+    .rate {
+        font-size: 1.2rem !important;
+    }
+    
+    .discounts-section {
+        gap: 0.8rem;
+    }
+    
+    .discount-item {
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .discount-icon {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+    
+    .age-range-section {
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-card {
+        padding: 1rem;
+    }
+    
+    .pricing-main-title {
+        font-size: 1.5rem;
+    }
+    
+    .early-bird-title {
+        font-size: 1.2rem;
+    }
+    
+    .pricing-details-section {
+        padding: 1rem;
+    }
+    
+    .cost-breakdown {
+        padding: 1rem;
     }
 }

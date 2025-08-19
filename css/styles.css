@@ -458,6 +458,143 @@ body {
     font-size: 0.9rem;
 }
 
+/* Pricing Section within Schedule Card */
+.pricing-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px dashed var(--sage-green);
+}
+
+.pricing-title {
+    font-family: var(--font-heading);
+    color: var(--sunset-orange);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.early-bird-highlight {
+    background: linear-gradient(135deg, var(--sunset-orange), #ff8c42);
+    color: white;
+    padding: 1.2rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(210, 105, 30, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.early-bird-highlight::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transform: rotate(45deg);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: rotate(45deg) translateX(-100%);
+    }
+    100% {
+        transform: rotate(45deg) translateX(100%);
+    }
+}
+
+.highlight-text {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.pricing-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.pricing-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.8rem;
+    background: rgba(122, 158, 122, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid var(--sage-green);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pricing-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(122, 158, 122, 0.2);
+}
+
+.pricing-icon {
+    font-size: 1.3rem;
+    margin-right: 0.8rem;
+    flex-shrink: 0;
+}
+
+.pricing-text {
+    font-size: 1rem;
+    color: var(--deep-forest);
+    line-height: 1.5;
+}
+
+.pricing-link {
+    color: var(--sunset-orange);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.pricing-link:hover {
+    color: var(--forest-green);
+    text-decoration: underline;
+}
+
+/* Mobile Responsiveness for Pricing */
+@media (max-width: 768px) {
+    .pricing-section {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+    }
+    
+    .pricing-title {
+        font-size: 1.2rem;
+    }
+    
+    .early-bird-highlight {
+        padding: 1rem;
+    }
+    
+    .highlight-text {
+        font-size: 1rem;
+    }
+    
+    .pricing-details {
+        gap: 0.8rem;
+    }
+    
+    .pricing-item {
+        padding: 0.6rem;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .pricing-icon {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+
 /* CTA Section */
 .cta-section {
     padding: var(--section-padding);
