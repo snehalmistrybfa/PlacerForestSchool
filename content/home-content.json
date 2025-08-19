@@ -1,12 +1,12 @@
 {
   "meta": {
-    "title": "Placer Forest School - Nature-Based Learning in Rocklin, CA",
-    "description": "Nature-based drop-off program for elementary-aged children (4-12 years) in Rocklin, CA. Child-led outdoor learning inspired by respectful parenting. Fridays 10 AM - 3 PM. Early bird special available!",
-    "keywords": "forest school, nature education, outdoor learning, Rocklin, Lincoln, Roseville, children, preschool, drop-off program",
+    "title": "Placer Forest School - Nature-Based Learning | Rocklin, Lincoln, Loomis & Roseville, CA",
+    "description": "Nature-based drop-off forest school for children (4-12 years) in Placer County: Rocklin, Lincoln, Loomis, and Roseville, CA. Child-led outdoor learning inspired by respectful parenting. Fridays 10 AM - 3 PM. Early registration special available!",
+    "keywords": "forest school, nature school, nature education, outdoor learning, Rocklin, Lincoln, Loomis, Roseville, Placer County, children, preschool, drop-off program, forest school loomis ca, nature school loomis ca, forest school lincoln ca, nature school lincoln ca, forest school roseville ca, nature school roseville ca",
     "author": "Placer Forest School",
     "openGraph": {
-      "title": "Placer Forest School - Nature-Based Learning",
-      "description": "Rooted in Respect. Inspired by Nature. Built for Connection.",
+      "title": "Placer Forest School - Nature-Based Learning in Placer County",
+      "description": "Rooted in Respect. Inspired by Nature. Built for Connection. Serving Rocklin, Lincoln, Loomis & Roseville.",
       "url": "https://placerforestschool.com"
     }
   },
@@ -55,9 +55,9 @@
   "introSection": {
     "title": "A Nature-Based Drop-Off Program Guided by Respectful Parenting & Outdoor Learning",
     "paragraphs": [
-      "Welcome to Placer Forest School — a forest school nestled in the Rocklin, CA area, offering child-led, nature-based learning for children ages 4 to 12 years old. Our program meets Fridays in a local open space rich with boulders, trees, and creeks, providing an ideal environment for exploration, movement, and discovery. (Exact location is shared upon registration for privacy and safety.)",
+      "Welcome to Placer Forest School — a forest school nestled in Placer County, offering child-led, nature-based learning for children ages 4 to 12 years old. Located conveniently for families in Rocklin, Lincoln, Loomis, and Roseville, CA, our program meets Fridays in a local open space rich with boulders, trees, and creeks, providing an ideal environment for exploration, movement, and discovery. (Exact location is shared upon registration for privacy and safety.)",
       "Our school philosophy draws inspiration from leading educators and researchers in the fields of child development, nature-based learning, and respectful parenting. You can explore these influential voices and their work in our <a href=\"resources.html\" class=\"text-link\">resources section</a>.",
-      "We fill a vital need in the Lincoln, Roseville, and Rocklin area: a developmentally aligned drop-off program where children can:"
+      "We fill a vital need in the Lincoln, Roseville, Loomis, and Rocklin area: a developmentally aligned drop-off program where children can:"
     ],
     "benefits": [
       {
@@ -121,7 +121,7 @@
         {
           "icon": "📍",
           "label": "Location:",
-          "value": "Open space in Lincoln/Rocklin, CA"
+          "value": "Placer County: Lincoln/Rocklin area (serving Loomis & Roseville too)"
         },
         {
           "icon": "📆",
@@ -181,6 +181,6 @@
   
   "missionSection": {
     "title": "🌱 Mission Statement",
-    "content": "At Placer Forest School, our mission is to create a respectful, nature-rich learning environment where children ages 4 to 12 years old are free to explore, connect, and grow. Rooted in the principles of respectful parenting, child-led discovery, and unstructured outdoor play, we offer families in the Lincoln, Roseville, and Rocklin area a forest school experience that supports whole-child development, fosters community, and honors the wonder of childhood."
+    "content": "At Placer Forest School, our mission is to create a respectful, nature-rich learning environment where children ages 4 to 12 years old are free to explore, connect, and grow. Rooted in the principles of respectful parenting, child-led discovery, and unstructured outdoor play, we offer families in Placer County—including Lincoln, Roseville, Loomis, and Rocklin—a forest school experience that supports whole-child development, fosters community, and honors the wonder of childhood."
   }
 }
