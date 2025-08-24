@@ -6,18 +6,25 @@
     <title>Enrollment - Placer Forest School</title>
     <meta name="description" content="Enroll your child in Placer Forest School's nature-based learning program. Registration form for our Friday forest school program.">
     
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Enrollment - Placer Forest School">
-    <meta property="og:description" content="Register your child for our nature-based program. Complete the enrollment form to get started.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://placerforestschool.com/enrollment.html">
-    <meta property="og:image" content="https://placerforestschool.com/images/carousel-2.jpg">
-    <meta property="og:site_name" content="Placer Forest School">
-    <meta name="keywords" content="forest school, nature school, nature based education, homeschool enrichment, outdoor education, Placer County, Loomis, Lincoln, Rocklin, Roseville, Sacramento">
-    
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K6CQNKX257"></script>
-    <script src="js/analytics.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID', {
+            page_title: 'Enrollment',
+            page_location: window.location.href
+        });
+        
+        function trackEvent(eventName, eventCategory, eventLabel) {
+            gtag('event', eventName, {
+                event_category: eventCategory,
+                event_label: eventLabel,
+                value: 1
+            });
+        }
+    </script>
     
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/enrollment.css">
@@ -41,9 +48,9 @@
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About Us</a></li>
-                <li><a href="enrollment.html" class="nav-link active">Enrollment</a></li>
-                <li><a href="resources.html" class="nav-link">Resources</a></li>
                 <li><a href="faqs.html" class="nav-link">FAQs</a></li>
+                <li><a href="resources.html" class="nav-link">Resources</a></li>
+                <li><a href="enrollment.html" class="nav-link active">Enrollment</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -59,12 +66,7 @@
         <div class="container">
             <div class="enrollment-header">
                 <h1>Join Our Forest Community</h1>
-                <p>Complete the registration form below to enroll your child in Placer Forest School's nature-based learning program for elementary-aged children (4-12 years old).</p>
-            </div>
-
-            <!-- Pricing Section -->
-            <div class="pricing-section-enrollment" id="pricing-section">
-                <!-- This will be populated by JavaScript -->
+                <p>Complete the registration form below to enroll your child in Placer Forest School's nature-based learning program.</p>
             </div>
 
             <!-- Google Form Integration -->
@@ -201,12 +203,12 @@
 
                         <div class="form-group">
                             <label>Photo/Video Permission:</label>
-                            <div class="checkbox-group">
-                                <input type="checkbox" name="entry.1344520112" id="photo_yes" value="Yes, I give permission for my child to be included in photos/videos for program documentation and promotional materials">
+                            <div class="radio-group">
+                                <input type="radio" name="entry.1344520112" id="photo_yes" value="Yes, I give permission for my child to be included in photos/videos for program documentation and promotional materials" required>
                                 <label for="photo_yes">Yes, I give permission for my child to be included in photos/videos for program documentation and promotional materials</label>
                             </div>
-                            <div class="checkbox-group">
-                                <input type="checkbox" name="entry.1344520112" id="photo_no" value="No, I do not give permission for my child to be included in photos/videos">
+                            <div class="radio-group">
+                                <input type="radio" name="entry.1344520112" id="photo_no" value="No, I do not give permission for my child to be included in photos/videos" required>
                                 <label for="photo_no">No, I do not give permission for my child to be included in photos/videos</label>
                             </div>
                         </div>
@@ -242,7 +244,7 @@
                     <h2>🎉 Registration Submitted Successfully!</h2>
                     <p>Thank you for enrolling your child in Placer Forest School. We've received your registration and will contact you within 24 hours with payment information and program details.</p>
                     <p>If you have any immediate questions, please contact us at:</p>
-                    <p>📞 (916) 258-5035 | ✉️ placerforestschool@gmail.com</p>
+                    <p>📞 (408) 242-0038 | ✉️ contact@placerforestschool.com</p>
                 </div>
             </div>
         </div>
@@ -264,14 +266,14 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact</h3>
-                    <p>📞 (916) 258-5035</p>
-                    <p>✉️ placerforestschool@gmail.com</p>
+                    <p>📞 (408) 242-0038</p>
+                    <p>✉️ contact@placerforestschool.com</p>
                     <p>📍 Lincoln/Rocklin, CA</p>
                 </div>
                 <div class="footer-section">
                     <h3>Program</h3>
                     <p>Fridays, 9 AM - 2 PM</p>
-                    <p>Ages 4-12 years old</p>
+                    <p>Ages 4 and up</p>
                     <p>Nature-based learning</p>
                 </div>
             </div>
@@ -284,7 +286,5 @@
     <script src="js/script.js"></script>
     <script src="js/enrollment.js"></script>
     <script src="js/enrollment-dynamic.js"></script>
-
-
 </body>
 </html>

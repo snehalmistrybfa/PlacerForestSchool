@@ -13,7 +13,7 @@
     "pricing": {
       "title": "🌱 Program Cost",
       "rate": "$11.50 per hour, per child",
-      "weekly": "5 hours per week (Fridays 10 AM - 3 PM)",
+      "weekly": "5 hours per week (Fridays 9 AM - 2 PM)",
       "session": "12-week session = $690 total per child",
       "discounts": [
         {
@@ -42,7 +42,7 @@
           "label": "Select Program:",
           "options": [
             {"value": "", "text": "Choose a program"},
-            {"value": "Friday Program (10 AM - 3 PM)", "text": "Friday Program (10 AM - 3 PM)"}
+            {"value": "Friday Program (9 AM - 2 PM)", "text": "Friday Program (9 AM - 2 PM)"}
           ]
         }
       }
