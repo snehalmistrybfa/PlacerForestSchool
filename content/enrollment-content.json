@@ -12,9 +12,11 @@
     },
     "pricing": {
       "title": "🌱 Program Cost",
-      "rate": "$11.50 per hour, per child",
-      "weekly": "5 hours per week (Fridays 9 AM - 2 PM)",
-      "session": "12-week session = $690 total per child",
+      "rate": "$46 per class (that’s $11.50/hour)",
+      "weekly": "4 hours per week, for a 12-week session",
+      "session": "Standard cost per session: $552",
+      "earlyBirdSpecial": "Early bird special: Register by August 31st and get an additional $40 off, making your total $512",
+      "monthlyPayments": "Monthly payments of $184 welcome",
       "discounts": [
         {
           "icon": "👨‍👩‍👧‍👦",
@@ -24,7 +26,7 @@
         {
           "icon": "🏫",
           "title": "Charter School Partnership",
-          "description": "Please email placerforestschool@gmail.com if you would like to use charter funds - include information about your kids and which charter school you use"
+          "description": "We accept charter funds. Please message for details: placerforestschool@gmail.com"
         }
       ]
     },
@@ -42,7 +44,7 @@
           "label": "Select Program:",
           "options": [
             {"value": "", "text": "Choose a program"},
-            {"value": "Friday Program (9 AM - 2 PM)", "text": "Friday Program (9 AM - 2 PM)"}
+            {"value": "Friday Program (9 AM - 1 PM)", "text": "Friday Program (9 AM - 1 PM)"}
           ]
         }
       }
@@ -169,7 +171,7 @@
         {
           "icon": "🌱",
           "title": "Program Cost:",
-          "text": "$11.50/hour per child (5 hours/week for 12 weeks = $690 total). 10% sibling discount available."
+          "text": "$11.50/hour per child (4 hours/week for 12 weeks = $552 total). 10% sibling discount available."
         },
         {
           "icon": "🌸",

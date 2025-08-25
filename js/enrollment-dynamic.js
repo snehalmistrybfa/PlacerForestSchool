@@ -81,7 +81,8 @@ function populatePricingSection() {
                 <div class="cost-breakdown">
                     <p class="rate">${pricing.pricing.rate}</p>
                     <p class="weekly">${pricing.pricing.weekly}</p>
-                    <p class="session-total">${pricing.pricing.session}</p>
+                    <p class="session-totalo">${pricing.pricing.session}</p>
+                    <p class="monthly-payments"><strong>${pricing.pricing.monthlyPayments}</strong></p>
                 </div>
                 
                 <div class="discounts-section">
@@ -130,8 +131,6 @@ function populateFormSections() {
     // Additional Information
     populateAdditionalInformation();
     
-    // Payment Information
-    populatePaymentInformation();
 }
 
 /**
@@ -294,19 +293,6 @@ function populateAdditionalInformation() {
     
     const additionalField = document.getElementById('additional_info');
     if (additionalField) additionalField.placeholder = section.fields.additionalInfo.placeholder;
-}
-
-function populatePaymentInformation() {
-    const section = enrollmentContent.formSections.paymentInformation;
-    const noticeBox = document.querySelector('.notice-box');
-    
-    if (noticeBox && section.notices) {
-        let noticesHTML = '';
-        section.notices.forEach(notice => {
-            noticesHTML += `<p><strong>${notice.icon} ${notice.title}</strong> ${notice.text}</p>`;
-        });
-        noticeBox.innerHTML = noticesHTML;
-    }
 }
 
 /**
