@@ -138,7 +138,64 @@ class ContentManager {
         // Load page-specific content if pageName is provided
         if (pageName) {
             await this.loadPageContent(pageName);
+            
+            // Handle page-specific rendering
+            if (pageName === 'about') {
+                this.renderAboutPage();
+            }
         }
+    }
+
+    /**
+     * Render About page content
+     */
+    renderAboutPage() {
+        if (!this.pageContent || !this.pageContent.team) return;
+
+        const { team } = this.pageContent;
+        
+        // Update team section title and description
+        this.setTextContent('#team-title', team.title);
+        this.setTextContent('#team-description', team.description);
+        
+        // Render team members
+        this.renderTeamMembers(team.members);
+    }
+
+    /**
+     * Render team members
+     */
+    renderTeamMembers(members) {
+        const teamContainer = document.querySelector('#team-members');
+        if (!teamContainer || !members) return;
+
+        teamContainer.innerHTML = '';
+
+        members.forEach(member => {
+            const memberElement = document.createElement('div');
+            memberElement.className = 'team-member';
+            
+            // Convert bio with newlines to paragraphs
+            const bioHtml = member.bio
+                .split('\n\n')
+                .map(paragraph => `<p>${paragraph}</p>`)
+                .join('');
+
+            memberElement.innerHTML = `
+                <div class="team-photo">
+                    <img src="${member.photo}" alt="${member.name}" />
+                </div>
+                <div class="team-info">
+                    <h3>${member.name}</h3>
+                    <h4>${member.role}</h4>
+                    <div class="team-bio">
+                        ${bioHtml}
+                    </div>
+                </div>
+            `;
+
+            teamContainer.appendChild(memberElement);
+        });
     }
 
     /**
