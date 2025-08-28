@@ -199,26 +199,7 @@
   },
   
   "googleForm": {
-    "actionUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfhLKmg5axwS2wpd2OuFm61qqnT2RpVQ4vEy4ooPjCR7UCY-w/formResponse",
-    "fieldMappings": {
-      "program": "entry.153991797",
-      "childName": "entry.1259515391",
-      "dateOfBirth": "entry.1904207928",
-      "specialNeeds": "entry.46770409",
-      "parentName": "entry.1760598539",
-      "phone": "entry.2010795504",
-      "email": "entry.468070000",
-      "address": "entry.928837263",
-      "emergencyName": "entry.704141376",
-      "emergencyPhone": "entry.343389045",
-      "emergencyRelationship": "entry.351445251",
-      "medicalInfo": "entry.1356648142",
-      "dietaryRestrictions": "entry.1990020228",
-      "participationWaiver": "entry.1086360565",
-      "liabilityWaiver": "entry.1086360565",
-      "medicalEmergency": "entry.1086360565",
-      "photoPermission": "entry.1344520112",
-      "additionalInfo": "entry.1527804629"
-    }
+    "embedded": true,
+    "embedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfhLKmg5axwS2wpd2OuFm61qqnT2RpVQ4vEy4ooPjCR7UCY-w/viewform?embedded=true"
   }
 }
