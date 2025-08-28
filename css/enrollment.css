@@ -1,5 +1,11 @@
 /* Enrollment Page Specific Styles */
 
+/* Ensure smooth scrolling for enrollment page */
+.enrollment-main {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 /* Pricing Section for Enrollment Page */
 .pricing-section-enrollment {
     max-width: 900px;
@@ -240,6 +246,16 @@
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
     padding: 3rem;
     border-top: 5px solid var(--sage-green);
+    overflow: visible;
+}
+
+/* Google Forms iframe styling */
+.form-container iframe {
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    background: transparent;
 }
 
 /* Form Sections */
