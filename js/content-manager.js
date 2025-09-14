@@ -101,7 +101,7 @@ class ContentManager {
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; ${new Date().getFullYear()} Placer Forest School. All rights reserved.</p>
+                    <p>&copy; ${new Date().getFullYear()} Placer Forest School, LLC. All rights reserved.</p>
                 </div>
             </div>
         `;

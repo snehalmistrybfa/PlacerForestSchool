@@ -1482,6 +1482,22 @@ html {
     color: var(--moss-green);
 }
 
+.terms-page .content-section {
+    background: rgba(245, 243, 240, 0.95);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.terms-page h3 {
+    font-family: var(--font-heading);
+    color: var(--forest-green);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
 /* Responsive team styles */
 @media (max-width: 768px) {
     .team-grid {
