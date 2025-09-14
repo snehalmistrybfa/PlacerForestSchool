@@ -69,13 +69,6 @@ function populatePricingSection() {
         <div class="pricing-card">
             <h2 class="pricing-main-title">${pricing.title}</h2>
             
-            <div class="early-bird-section">
-                <h3 class="early-bird-title">${pricing.earlyBird.title}</h3>
-                <div class="early-bird-highlight-enrollment">
-                    <p class="highlight-text">${pricing.earlyBird.highlight}</p>
-                </div>
-            </div>
-            
             <div class="pricing-details-section">
                 <h3 class="pricing-subtitle">${pricing.pricing.title}</h3>
                 <div class="cost-breakdown">

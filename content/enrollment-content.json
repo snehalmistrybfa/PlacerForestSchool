@@ -6,16 +6,11 @@
   
   "pricingSection": {
     "title": "🌿 Program Details & Registration Special",
-    "earlyBird": {
-      "title": "Special Offer: Register by August 31st - Save $80",
-      "highlight": "Reserve your child's spot now! We are waiving the $40 registration fee and applying the $40 Venmo payment toward tuition - a total savings of $80."
-    },
     "pricing": {
       "title": "🌱 Program Cost",
       "rate": "$46 per class (that’s $11.50/hour)",
       "weekly": "4 hours per week, for a 12-week session",
       "session": "Standard cost per session: $552",
-      "earlyBirdSpecial": "Early bird special: Register by August 31st and get an additional $40 off, making your total $512",
       "monthlyPayments": "Monthly payments of $184 welcome",
       "discounts": [
         {
@@ -164,12 +159,7 @@
       "title": "🌿 Payment Information",
       "notices": [
         {
-          "icon": "🎉",
-          "title": "Early Bird Special:",
-          "text": "Register by August 31st for just $40 to secure your spot! This fee counts toward tuition and you save an additional $40 (total $80 savings)."
-        },
-        {
-          "icon": "🌱",
+          "icon": "",
           "title": "Program Cost:",
           "text": "$11.50/hour per child (4 hours/week for 12 weeks = $552 total). 10% sibling discount available."
         },

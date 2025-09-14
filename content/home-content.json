@@ -137,13 +137,8 @@
       "note": "Exact location shared upon registration for privacy and safety"
     },
     "pricing": {
-      "title": "Special Offer - Register by August 31st",
-      "highlight": "Reserve your child's spot now! We are waiving the $40 registration fee and applying the $40 Venmo payment toward tuition - a total savings of $80.",
+      "title": "Pricing",
       "details": [
-        {
-          "icon": "🌿",
-          "text": "Save $80 total when you register by August 31st!"
-        },
         {
           "icon": "👨‍👩‍👧‍👦",
           "text": "10% off tuition for each additional sibling"
