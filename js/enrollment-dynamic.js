@@ -70,30 +70,9 @@ function populatePricingSection() {
             <h2 class="pricing-main-title">${pricing.title}</h2>
             
             <div class="pricing-details-section">
-                <h3 class="pricing-subtitle">${pricing.pricing.title}</h3>
-                <div class="cost-breakdown">
-                    <p class="rate">${pricing.pricing.rate}</p>
-                    <p class="weekly">${pricing.pricing.weekly}</p>
-                    <p class="session-totalo">${pricing.pricing.session}</p>
-                    <p class="monthly-payments"><strong>${pricing.pricing.monthlyPayments}</strong></p>
-                </div>
-                
-                <div class="discounts-section">
-                    ${pricing.pricing.discounts.map(discount => `
-                        <div class="discount-item">
-                            <span class="discount-icon">${discount.icon}</span>
-                            <div class="discount-content">
-                                <h4>${discount.title}</h4>
-                                <p>${discount.description}</p>
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>
-            </div>
-            
-            <div class="age-range-section">
-                <h3>${pricing.ageRange.title}</h3>
-                <p>${pricing.ageRange.description}</p>
+                <ul>
+                    ${pricing.details.map(detail => `<li>${detail}</li>`).join('')}
+                </ul>
             </div>
         </div>
     `;

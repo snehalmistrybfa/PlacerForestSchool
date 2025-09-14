@@ -5,30 +5,16 @@
   "seoKeywords": "Enroll your child in Placer Forest School's nature-based learning program for children ages 4-12 years old. Serving families in Rocklin, Lincoln, Loomis, and Roseville, CA.",
   
   "pricingSection": {
-    "title": "🌿 Program Details & Registration Special",
-    "pricing": {
-      "title": "🌱 Program Cost",
-      "rate": "$46 per class (that’s $11.50/hour)",
-      "weekly": "4 hours per week, for a 12-week session",
-      "session": "Standard cost per session: $552",
-      "monthlyPayments": "Monthly payments of $184 welcome",
-      "discounts": [
-        {
-          "icon": "👨‍👩‍👧‍👦",
-          "title": "Sibling Discount",
-          "description": "10% off tuition for each additional sibling"
-        },
-        {
-          "icon": "🏫",
-          "title": "Charter School Partnership",
-          "description": "We accept charter funds. Please message for details: placerforestschool@gmail.com"
-        }
-      ]
-    },
-    "ageRange": {
-      "title": "🦋 Ages We Welcome",
-      "description": "Children ages 4 to 12 years old"
-    }
+    "title": "🌿 Program Details",
+    "details": [
+      "$46 per class (that’s $11.50/hour)",
+      "4 hours per week, for a 12-week session",
+      "Standard cost per session: $552",
+      "Monthly payments of $184 welcome",
+      "Sibling Discount: 10% off tuition for each additional sibling.",
+      "We accept charter funds. Please message for details: placerforestschool@gmail.com",
+      "Ages We Welcome: Children ages 4 to 12 years old"
+    ]
   },
   
   "formSections": {
