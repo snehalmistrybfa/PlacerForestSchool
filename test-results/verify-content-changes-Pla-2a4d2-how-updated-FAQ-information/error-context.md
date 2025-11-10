@@ -1,0 +1,80 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Placer Forest School Logo Placer Forest School" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+        - img "Placer Forest School Logo" [ref=e6]
+        - generic [ref=e7]: Placer Forest School
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "Home" [ref=e10] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e11]:
+          - link "About Us" [ref=e12] [cursor=pointer]:
+            - /url: about.html
+        - listitem [ref=e13]:
+          - link "Enrollment" [ref=e14] [cursor=pointer]:
+            - /url: enrollment.html
+        - listitem [ref=e15]:
+          - link "Resources" [ref=e16] [cursor=pointer]:
+            - /url: resources.html
+        - listitem [ref=e17]:
+          - link "FAQs" [ref=e18] [cursor=pointer]:
+            - /url: faqs.html
+        - listitem [ref=e19]:
+          - link "Contact" [ref=e20] [cursor=pointer]:
+            - /url: contact.html
+  - main [ref=e21]:
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - heading "Frequently Asked Questions" [level=1] [ref=e24]
+        - paragraph [ref=e25]: Find answers to common questions about our forest school program
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]: 🌲
+          - heading "Program Basics" [level=2] [ref=e30]
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - button "What is forest school? +" [ref=e33] [cursor=pointer]:
+              - text: What is forest school?
+              - generic [ref=e34]: +
+            - paragraph [ref=e35]: Forest school is a child-centered educational approach that takes place in natural outdoor environments. Children engage in hands-on learning through exploration, play, and discovery in nature, developing confidence, independence, and a deep connection to the natural world.
+          - generic [ref=e36]:
+            - button "What ages do you serve? +" [ref=e37] [cursor=pointer]:
+              - text: What ages do you serve?
+              - generic [ref=e38]: +
+            - paragraph [ref=e39]: Our program welcomes children ages 4 and up, with the belief that mixed-age groups offer rich opportunities for learning and growth. Older children develop leadership and empathy, while younger ones bring creativity, curiosity, and fresh perspective. Together, they create a dynamic environment where diverse developmental stages and interests are supported through collaboration and play.
+          - generic [ref=e40]:
+            - button "How long is each session? +" [ref=e41] [cursor=pointer]:
+              - text: How long is each session?
+              - generic [ref=e42]: +
+            - paragraph [ref=e43]: Our Friday program runs from 10:00 AM to 3:00 PM, giving children a full day of outdoor exploration and learning while fitting into family schedules.
+      - generic [ref=e44]:
+        - heading "Still Have Questions?" [level=2] [ref=e45]
+        - paragraph [ref=e46]: We're here to help! If you don't see your question answered above, please don't hesitate to reach out.
+        - generic [ref=e47]:
+          - link "Contact Us" [ref=e48] [cursor=pointer]:
+            - /url: contact.html
+          - link "Schedule a Call" [ref=e49] [cursor=pointer]:
+            - /url: tel:+1234567890
+  - contentinfo [ref=e50]:
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - heading "🌲 Placer Forest School" [level=3] [ref=e54]
+          - paragraph [ref=e55]: Rooted in Respect. Inspired by Nature. Built for Connection.
+        - generic [ref=e56]:
+          - heading "Contact" [level=3] [ref=e57]
+          - paragraph [ref=e58]: 📞 (916) 258-5035
+          - paragraph [ref=e59]: ✉️ placerforestschool@gmail.com
+          - paragraph [ref=e60]: 📍 Lincoln/Rocklin, CA
+        - generic [ref=e61]:
+          - heading "Program" [level=3] [ref=e62]
+          - paragraph [ref=e63]: Monday & Wednesday 11:30 AM - 3:30 PM | Friday 9 AM - 1 PM
+          - paragraph [ref=e64]: Ages 4 to 12 years old
+          - paragraph [ref=e65]: Nature-based drop-off program
+      - paragraph [ref=e67]: © 2025 Placer Forest School, LLC. All rights reserved.
+```

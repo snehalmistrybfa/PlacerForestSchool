@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Enrollment Form - Placer Forest School</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 600px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+        .form-group { 
+            margin-bottom: 15px; 
+        }
+        label { 
+            display: block; 
+            margin-bottom: 5px; 
+            font-weight: bold; 
+        }
+        input, select, textarea { 
+            width: 100%; 
+            padding: 8px; 
+            border: 1px solid #ddd; 
+            border-radius: 4px; 
+        }
+        button { 
+            background: #2d5a4d; 
+            color: white; 
+            padding: 12px 24px; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            font-size: 16px; 
+        }
+        button:hover { 
+            background: #1e3d33; 
+        }
+        .success-message { 
+            background: #d4edda; 
+            color: #155724; 
+            padding: 20px; 
+            border-radius: 4px; 
+            margin-top: 20px; 
+        }
+        .form-container { 
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+    <h1>🌲 Test Enrollment Form</h1>
+    <p>This is a minimal test form to verify the Google Forms integration and success message display.</p>
+
+    <div class="form-container">
+        <form id="enrollmentForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfhLKmg5axwS2wpd2OuFm61qqnT2RpVQ4vEy4ooPjCR7UCY-w/formResponse" method="POST" target="hidden_iframe">
+            
+            <div class="form-group">
+                <label for="program">Select Program:</label>
+                <select name="entry.153991797" required>
+                    <option value="">Choose a program</option>
+                    <option value="Outdoor Explorer Program (Ages 4-6)">Outdoor Explorer Program (Ages 4-6)</option>
+                    <option value="Nature Navigator Program (Ages 7-9)">Nature Navigator Program (Ages 7-9)</option>
+                    <option value="Wilderness Adventurer Program (Ages 10-12)">Wilderness Adventurer Program (Ages 10-12)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="childName">Child's Full Name:</label>
+                <input type="text" name="entry.1259515391" required>
+            </div>
+
+            <div class="form-group">
+                <label for="parentName">Parent/Guardian Name:</label>
+                <input type="text" name="entry.1515671992" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="entry.1854033961" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" name="entry.854691013" required>
+            </div>
+
+            <button type="submit">Submit Test Form</button>
+        </form>
+    </div>
+
+    <!-- Success Message (hidden by default) -->
+    <div id="success-message" class="success-message" style="display: none;">
+        <h2>🎉 Test Submission Successful!</h2>
+        <p>The form submitted successfully and this success message is working!</p>
+        <p>✅ Google Forms integration: Working</p>
+        <p>✅ Success message display: Working</p>
+        <p>✅ Iframe submission: Working</p>
+    </div>
+
+    <!-- Hidden iframe for form submission -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted){showSuccessMessage()}"></iframe>
+
+    <script>
+        // Simple form submission handling
+        document.getElementById('enrollmentForm').addEventListener('submit', function() {
+            window.submitted = true;
+            console.log('Form submitted, flag set to:', window.submitted);
+        });
+
+        function showSuccessMessage() {
+            console.log('showSuccessMessage called, submitted flag:', window.submitted);
+            if (!window.submitted) return;
+            
+            const formContainer = document.querySelector('.form-container');
+            const successMessage = document.getElementById('success-message');
+            
+            formContainer.style.display = 'none';
+            successMessage.style.display = 'block';
+            
+            // Scroll to success message
+            successMessage.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+            // Reset submitted flag
+            window.submitted = false;
+        }
+
+        // Make showSuccessMessage globally accessible
+        window.showSuccessMessage = showSuccessMessage;
+    </script>
+</body>
+</html>

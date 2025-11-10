@@ -1,0 +1,115 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "Placer Forest School Logo Placer Forest School" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+        - img "Placer Forest School Logo" [ref=e6]
+        - generic [ref=e7]: Placer Forest School
+      - list [ref=e8]:
+        - listitem [ref=e9]:
+          - link "Home" [ref=e10] [cursor=pointer]:
+            - /url: index.html
+        - listitem [ref=e11]:
+          - link "About Us" [ref=e12] [cursor=pointer]:
+            - /url: about.html
+        - listitem [ref=e13]:
+          - link "Enrollment" [ref=e14] [cursor=pointer]:
+            - /url: enrollment.html
+        - listitem [ref=e15]:
+          - link "Resources" [ref=e16] [cursor=pointer]:
+            - /url: resources.html
+        - listitem [ref=e17]:
+          - link "FAQs" [ref=e18] [cursor=pointer]:
+            - /url: faqs.html
+        - listitem [ref=e19]:
+          - link "Contact" [ref=e20] [cursor=pointer]:
+            - /url: contact.html
+  - main [ref=e21]:
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - heading "Contact Us" [level=1] [ref=e24]
+        - paragraph [ref=e25]: We'd love to hear from you and answer any questions about our forest school program
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - heading "Get In Touch" [level=2] [ref=e28]
+          - generic [ref=e29]:
+            - generic [ref=e30]:
+              - generic [ref=e31]: 📞
+              - generic [ref=e32]:
+                - heading "Phone" [level=3] [ref=e33]
+                - paragraph [ref=e34]:
+                  - link "(916) 258-5035" [ref=e35] [cursor=pointer]:
+                    - /url: tel:+19162585035
+                - paragraph [ref=e36]: Call or text for quick questions
+            - generic [ref=e37]:
+              - generic [ref=e38]: ✉️
+              - generic [ref=e39]:
+                - heading "Email" [level=3] [ref=e40]
+                - paragraph [ref=e41]:
+                  - link "placerforestschool@gmail.com" [ref=e42] [cursor=pointer]:
+                    - /url: mailto:placerforestschool@gmail.com
+                - paragraph [ref=e43]: Email for detailed inquiries
+            - generic [ref=e44]:
+              - generic [ref=e45]: 📍
+              - generic [ref=e46]:
+                - heading "Location" [level=3] [ref=e47]
+                - paragraph [ref=e48]: Lincoln/Rocklin, CA Area
+                - paragraph [ref=e49]: Exact location shared upon enrollment
+        - generic [ref=e50]:
+          - heading "Program Hours" [level=2] [ref=e51]
+          - generic [ref=e53]:
+            - heading "Friday" [level=3] [ref=e54]
+            - paragraph [ref=e55]: 10:00 AM - 3:00 PM
+            - paragraph [ref=e56]: Ages 4-12 years old
+          - paragraph [ref=e57]: Please contact us to discuss your child's specific needs and our enrollment process.
+        - generic [ref=e58]:
+          - heading "Send Us a Message" [level=2] [ref=e59]
+          - paragraph [ref=e60]: Have questions about our program? Send us a message and we'll get back to you within 24 hours.
+          - generic [ref=e61]:
+            - generic [ref=e62]:
+              - generic [ref=e63]: "Your Name:"
+              - textbox "Your Name:" [ref=e64]
+            - generic [ref=e65]:
+              - generic [ref=e66]: "Email Address:"
+              - textbox "Email Address:" [ref=e67]
+            - generic [ref=e68]:
+              - generic [ref=e69]: "Phone Number:"
+              - textbox "Phone Number:" [ref=e70]
+            - generic [ref=e71]:
+              - generic [ref=e72]: "Child's Age:"
+              - textbox "Child's Age:" [ref=e73]
+            - generic [ref=e74]:
+              - generic [ref=e75]: "Type of Inquiry:"
+              - combobox "Type of Inquiry:" [ref=e76]:
+                - option "Select an option" [selected]
+                - option "General Information"
+                - option "Enrollment Questions"
+                - option "Program Details"
+                - option "Schedule Information"
+                - option "Other"
+            - generic [ref=e77]:
+              - generic [ref=e78]: "Your Message:"
+              - textbox "Your Message:" [ref=e79]:
+                - /placeholder: Please share your questions or tell us how we can help...
+            - button "Send Message" [ref=e80] [cursor=pointer]
+  - contentinfo [ref=e81]:
+    - generic [ref=e82]:
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - heading "🌲 Placer Forest School" [level=3] [ref=e85]
+          - paragraph [ref=e86]: Rooted in Respect. Inspired by Nature. Built for Connection.
+        - generic [ref=e87]:
+          - heading "Contact" [level=3] [ref=e88]
+          - paragraph [ref=e89]: 📞 (916) 258-5035
+          - paragraph [ref=e90]: ✉️ placerforestschool@gmail.com
+          - paragraph [ref=e91]: 📍 Lincoln/Rocklin, CA
+        - generic [ref=e92]:
+          - heading "Program" [level=3] [ref=e93]
+          - paragraph [ref=e94]: Monday & Wednesday 11:30 AM - 3:30 PM | Friday 9 AM - 1 PM
+          - paragraph [ref=e95]: Ages 4 to 12 years old
+          - paragraph [ref=e96]: Nature-based drop-off program
+      - paragraph [ref=e98]: © 2025 Placer Forest School, LLC. All rights reserved.
+```

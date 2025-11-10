@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placer Forest School - Print Flyer</title>
+    <style>
+        @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.4;
+            background: white;
+        }
+
+        .flyer {
+            width: 7.5in;
+            margin: 0 auto;
+            background: white;
+            border: 3px solid #2c5530;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c5530, #4a7c59);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 2.5em;
+            margin-bottom: 8px;
+        }
+
+        .main-title {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            font-size: 1em;
+            font-style: italic;
+        }
+
+        .age-banner {
+            background: #ff6b6b;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #2c5530;
+        }
+
+        .program-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .program-item {
+            border: 2px solid #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .program-icon {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .benefits-section {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .benefits-title {
+            color: #2c5530;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .benefits-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            font-size: 0.9em;
+        }
+
+        .benefit {
+            display: flex;
+            align-items: center;
+        }
+
+        .benefit-icon {
+            font-size: 1.2em;
+            margin-right: 8px;
+            min-width: 25px;
+        }
+
+        .quote {
+            text-align: center;
+            font-style: italic;
+            font-size: 1.1em;
+            color: #2c5530;
+            margin: 20px 0;
+            padding: 15px;
+            background: #e8f5e8;
+            border-radius: 8px;
+        }
+
+        .contact-section {
+            background: #2c5530;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact-title {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .contact-item {
+            background: rgba(255,255,255,0.1);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .contact-item h4 {
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .cta-buttons {
+            margin: 15px 0;
+        }
+
+        .cta-button {
+            background: white;
+            color: #2c5530;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+            margin: 0 10px;
+            display: inline-block;
+            font-size: 0.9em;
+        }
+
+        .location-note {
+            font-size: 0.8em;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        .tear-off-section {
+            border-top: 2px dashed #ccc;
+            padding: 15px;
+            background: #f8f9fa;
+        }
+
+        .tear-off-title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c5530;
+        }
+
+        .tear-off-strips {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .tear-strip {
+            border: 1px dashed #ccc;
+            padding: 8px;
+            text-align: center;
+            font-size: 0.8em;
+            background: white;
+        }
+
+        .website {
+            font-weight: bold;
+            color: #2c5530;
+        }
+
+        @media print {
+            body { 
+                -webkit-print-color-adjust: exact; 
+                print-color-adjust: exact;
+            }
+            .flyer { border: 2px solid #2c5530; }
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo">🌲</div>
+            <h1 class="main-title">Placer Forest School</h1>
+            <p class="tagline">Rooted in Respect. Inspired by Nature. Built for Connection.</p>
+        </div>
+
+        <div class="age-banner">🌱 NATURE-BASED DROP-OFF PROGRAM • AGES 4+ 🌱</div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <div class="intro">
+                <strong>Child-led outdoor learning in the beautiful Lincoln/Rocklin area!</strong><br>
+                Combining respectful parenting principles with hands-on nature exploration.
+            </div>
+
+            <!-- Program Details -->
+            <div class="program-grid">
+                <div class="program-item">
+                    <span class="program-icon">📅</span>
+                    <h3>When</h3>
+                    <p><strong>Fridays</strong><br>10:00 AM - 3:00 PM</p>
+                </div>
+                <div class="program-item">
+                    <span class="program-icon">📍</span>
+                    <h3>Where</h3>
+                    <p><strong>Lincoln/Rocklin, CA</strong><br>Open space with boulders, trees & creeks</p>
+                </div>
+                <div class="program-item">
+                    <span class="program-icon">📆</span>
+                    <h3>Session</h3>
+                    <p><strong>12-week program</strong><br>Starting September 19th</p>
+                </div>
+                <div class="program-item">
+                    <span class="program-icon">🌲</span>
+                    <h3>Philosophy</h3>
+                    <p><strong>Child-led learning</strong><br>Respectful parenting approach</p>
+                </div>
+            </div>
+
+            <!-- Benefits -->
+            <div class="benefits-section">
+                <h3 class="benefits-title">🌟 What Your Child Will Experience</h3>
+                <div class="benefits-list">
+                    <div class="benefit">
+                        <span class="benefit-icon">🤝</span>
+                        <span>Strengthen social-emotional skills</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">🏃</span>
+                        <span>Build physical strength & coordination</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">🎨</span>
+                        <span>Create with natural materials</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">🔍</span>
+                        <span>Develop focus & independence</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">🌿</span>
+                        <span>Cultivate bond with nature</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">✨</span>
+                        <span>Honor childhood wonder</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote">
+                "Nature isn't just the setting — it's the teacher, the playground, and the heart of everything we do."
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="contact-section">
+            <h2 class="contact-title">🌱 Ready to Join Our Forest Community?</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h4>📞 Call Us</h4>
+                    <p>(916) 258-5035</p>
+                </div>
+                <div class="contact-item">
+                    <h4>✉️ Email Us</h4>
+                    <p>placerforestschool@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <h4>🌐 Visit Online</h4>
+                    <p>placerforestschool.com</p>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <span class="cta-button">Register at placerforestschool.com/enrollment</span>
+                <span class="cta-button">Learn More at placerforestschool.com</span>
+            </div>
+
+            <p class="location-note">
+                Serving families in Lincoln, Roseville, Rocklin and surrounding areas
+            </p>
+        </div>
+
+        <!-- Tear-off Contact Strips -->
+        <div class="tear-off-section">
+            <div class="tear-off-title">✂️ TAKE OUR INFO WITH YOU ✂️</div>
+            <div class="tear-off-strips">
+                <div class="tear-strip">
+                    <div>🌲 <strong>Placer Forest School</strong></div>
+                    <div>(916) 258-5035</div>
+                    <div class="website">placerforestschool.com</div>
+                </div>
+                <div class="tear-strip">
+                    <div>🌲 <strong>Placer Forest School</strong></div>
+                    <div>(916) 258-5035</div>
+                    <div class="website">placerforestschool.com</div>
+                </div>
+                <div class="tear-strip">
+                    <div>🌲 <strong>Placer Forest School</strong></div>
+                    <div>(916) 258-5035</div>
+                    <div class="website">placerforestschool.com</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment Form Test - Placer Forest School</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
+            background: #f5f5f5; 
+        }
+        .container { 
+            max-width: 800px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 30px; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+        .form-group { 
+            margin-bottom: 15px; 
+        }
+        label { 
+            display: block; 
+            margin-bottom: 5px; 
+            font-weight: bold; 
+        }
+        input, select, textarea { 
+            width: 100%; 
+            padding: 10px; 
+            border: 1px solid #ddd; 
+            border-radius: 5px; 
+            box-sizing: border-box; 
+        }
+        .checkbox-group { 
+            margin: 15px 0; 
+        }
+        .checkbox-group input { 
+            width: auto; 
+            margin-right: 10px; 
+        }
+        .submit-btn { 
+            background: #2d5d3d; 
+            color: white; 
+            padding: 15px 30px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 16px; 
+            margin: 20px 0; 
+        }
+        .submit-btn:hover { 
+            background: #1a3d2e; 
+        }
+        .test-notice {
+            background: #4CAF50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .success-message {
+            background: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="test-notice">
+            🧪 TEST MODE: This form is pre-filled with test data for debugging Google Forms submission
+        </div>
+        
+        <h1>Enrollment Form Test</h1>
+        <p>Testing Google Forms submission with pre-filled data.</p>
+
+        <form id="enrollmentForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfhLKmg5axwS2wpd2OuFm61qqnT2RpVQ4vEy4ooPjCR7UCY-w/formResponse" method="POST" target="hidden_iframe">
+            
+            <!-- Program Selection -->
+            <div class="form-group">
+                <label for="program">Select Program:</label>
+                <select name="entry.153991797" id="program" required>
+                    <option value="">Choose a program</option>
+                    <option value="Friday Program (9 AM - 1 PM)" selected>Friday Program (9 AM - 1 PM)</option>
+                </select>
+            </div>
+
+            <!-- Child Information -->
+            <div class="form-group">
+                <label for="child1_name">Child's Full Name:</label>
+                <input type="text" name="entry.1259515391" id="child1_name" value="Emma Thompson" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="child1_dob">Date of Birth:</label>
+                <input type="date" name="entry.1904207928" id="child1_dob" value="2018-05-15" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="child1_special_needs">Special Considerations:</label>
+                <textarea name="entry.46770409" id="child1_special_needs" rows="3">No known allergies or special considerations.</textarea>
+            </div>
+
+            <!-- Parent Information -->
+            <div class="form-group">
+                <label for="parent_name">Parent/Guardian Name:</label>
+                <input type="text" name="entry.1760598539" id="parent_name" value="Sarah Thompson" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="parent_phone">Phone Number:</label>
+                <input type="tel" name="entry.2010795504" id="parent_phone" value="555-123-4567" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="parent_email">Email Address:</label>
+                <input type="email" name="entry.468070000" id="parent_email" value="sarah.thompson.test@example.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="address">Home Address:</label>
+                <textarea name="entry.928837263" id="address" rows="3" required>123 Oak Street
+Lincoln, CA 95648</textarea>
+            </div>
+
+            <!-- Emergency Contact -->
+            <div class="form-group">
+                <label for="emergency_name">Emergency Contact Name:</label>
+                <input type="text" name="entry.704141376" id="emergency_name" value="John Thompson" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="emergency_phone">Emergency Contact Phone:</label>
+                <input type="tel" name="entry.343389045" id="emergency_phone" value="555-987-6543" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="emergency_relationship">Relationship to Child:</label>
+                <input type="text" name="entry.351445251" id="emergency_relationship" value="Father" required>
+            </div>
+
+            <!-- Medical Information -->
+            <div class="form-group">
+                <label for="medical_info">Allergies, Medical Conditions, and Medications:</label>
+                <textarea name="entry.1356648142" id="medical_info" rows="4">No known allergies or medical conditions.</textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="dietary_restrictions">Dietary Restrictions:</label>
+                <textarea name="entry.1990020228" id="dietary_restrictions" rows="2">No dietary restrictions.</textarea>
+            </div>
+
+            <!-- Waivers and Permissions -->
+            <div class="checkbox-group">
+                <input type="checkbox" name="entry.1086360565" id="participation_waiver" value="Ability to Participate & Assumption of Risk: I acknowledge that outdoor forest school activities involve inherent risks and that my child is physically and emotionally capable of participating in the program." checked required>
+                <label for="participation_waiver">
+                    <strong>Ability to Participate & Assumption of Risk:</strong> I acknowledge that outdoor forest school activities involve inherent risks and that my child is physically and emotionally capable of participating in the program.
+                </label>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" name="entry.1086360565" id="liability_waiver" value="Waiver & Release of Liability: I release Placer Forest School, its instructors, and associated parties from any liability for injuries or damages that may occur during participation in the program." checked required>
+                <label for="liability_waiver">
+                    <strong>Waiver & Release of Liability:</strong> I release Placer Forest School, its instructors, and associated parties from any liability for injuries or damages that may occur during participation in the program.
+                </label>
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" name="entry.1086360565" id="medical_emergency" value="Medical Emergency Authorization: I authorize Placer Forest School staff to seek emergency medical treatment for my child if needed and agree to be responsible for any associated costs." checked required>
+                <label for="medical_emergency">
+                    <strong>Medical Emergency Authorization:</strong> I authorize Placer Forest School staff to seek emergency medical treatment for my child if needed and agree to be responsible for any associated costs.
+                </label>
+            </div>
+
+            <!-- Photo Permission -->
+            <div class="form-group">
+                <label>Photo/Video Permission:</label>
+                <div>
+                    <input type="radio" name="entry.1344520112" id="photo_yes" value="Yes, I give permission for my child to be included in photos/videos for program documentation and promotional materials" checked required>
+                    <label for="photo_yes">Yes, I give permission for my child to be included in photos/videos for program documentation and promotional materials</label>
+                </div>
+                <div>
+                    <input type="radio" name="entry.1344520112" id="photo_no" value="No, I do not give permission for my child to be included in photos/videos" required>
+                    <label for="photo_no">No, I do not give permission for my child to be included in photos/videos</label>
+                </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="form-group">
+                <label for="additional_info">Anything else you'd like us to know about your child or family?</label>
+                <textarea name="entry.1527804629" id="additional_info" rows="4">Emma loves nature and is excited to join the forest school program!</textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">🧪 Test Submit Registration</button>
+        </form>
+
+        <!-- Success Message (hidden by default) -->
+        <div id="success-message" class="success-message" style="display: none;">
+            <h2>🎉 Registration Submitted Successfully!</h2>
+            <p>Thank you for enrolling your child in Placer Forest School. This was a test submission.</p>
+        </div>
+    </div>
+
+    <!-- Hidden iframe for form submission -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.submitted){showSuccessMessage()}"></iframe>
+
+    <script>
+        console.log('🧪 Test form loaded');
+        
+        // Set submitted flag when form is submitted
+        document.getElementById('enrollmentForm').addEventListener('submit', function() {
+            console.log('🚀 Form submission started...');
+            window.submitted = true;
+            
+            // Update button text
+            const submitBtn = document.querySelector('.submit-btn');
+            submitBtn.textContent = 'Submitting...';
+            submitBtn.disabled = true;
+        });
+        
+        // Success message handler
+        function showSuccessMessage() {
+            console.log('📨 Iframe loaded, submitted flag:', window.submitted);
+            
+            if (!window.submitted) {
+                console.log('No submitted flag, skipping success message');
+                return;
+            }
+            
+            console.log('✅ Showing success message...');
+            
+            // Hide the form
+            const form = document.getElementById('enrollmentForm');
+            if (form) {
+                form.style.display = 'none';
+            }
+            
+            // Show success message
+            const successMessage = document.getElementById('success-message');
+            if (successMessage) {
+                successMessage.style.display = 'block';
+            }
+            
+            window.submitted = false;
+        }
+        
+        // Make function globally accessible
+        window.showSuccessMessage = showSuccessMessage;
+        
+        console.log('🧪 Test form ready for submission');
+    </script>
+</body>
+</html>

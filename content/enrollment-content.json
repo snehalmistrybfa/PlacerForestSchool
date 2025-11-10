@@ -7,13 +7,12 @@
   "pricingSection": {
     "title": "🌿 Program Details",
     "details": [
-      "$46 per class (that’s $11.50/hour)",
-      "4 hours per week, for a 12-week session",
-      "Standard cost per session: $552",
-      "Monthly payments of $184 welcome",
-      "Sibling Discount: 10% off tuition for each additional sibling.",
-      "We accept charter funds. Please message for details: placerforestschool@gmail.com",
-      "Ages We Welcome: Children ages 4 to 12 years old"
+      "Session Length: 4 hours per week for 10 consecutive weeks, starting the week of 01/05/2026",
+      "Format: Drop-off program",
+      "Tuition: $520 per session",
+      "Sibling Discount: 10% off tuition for each additional sibling",
+      "Charter Funds: We accept charter school funds — please email us for details at placerforestschool@gmail.com",
+      "Ages We Welcome: Children ages 4–12"
     ]
   },
   
@@ -25,7 +24,9 @@
           "label": "Select Program:",
           "options": [
             {"value": "", "text": "Choose a program"},
-            {"value": "Friday Program (9 AM - 1 PM)", "text": "Friday Program (9 AM - 1 PM)"}
+            {"value": "Monday Program (11:30 AM - 3:30 PM)", "text": "Monday Program (11:30 AM - 3:30 PM)"},
+            {"value": "Wednesday Program (11:30 AM - 3:30 PM)", "text": "Wednesday Program (11:30 AM - 3:30 PM)"},
+            {"value": "Friday Program (9:00 AM - 1:00 PM)", "text": "Friday Program (9:00 AM - 1:00 PM)"}
           ]
         }
       }
@@ -147,7 +148,7 @@
         {
           "icon": "",
           "title": "Program Cost:",
-          "text": "$11.50/hour per child (4 hours/week for 12 weeks = $552 total). 10% sibling discount available."
+          "text": "$520 per session (4 hours/week for 10 weeks). 10% sibling discount available."
         },
         {
           "icon": "🌸",
@@ -158,6 +159,11 @@
           "icon": "🏞️",
           "title": "Our Forest Location:",
           "text": "The exact meeting location will be shared upon registration completion for privacy and safety reasons."
+        },
+        {
+          "icon": "⚖️",
+          "title": "Refund Policy:",
+          "text": "Tuition is nonrefundable once classes start."
         }
       ]
     }
