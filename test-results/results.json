@@ -1,0 +1,541 @@
+{
+  "config": {
+    "configFile": "/Users/s0m0ohl/placerforestschool/playwright.config.ts",
+    "rootDir": "/Users/s0m0ohl/placerforestschool",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/s0m0ohl/placerforestschool/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/s0m0ohl/placerforestschool",
+        "testIgnore": [],
+        "testMatch": [
+          "verification-test.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.1",
+    "workers": 5,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "verification-test.spec.ts",
+      "file": "verification-test.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "1. Pages load without console errors",
+          "file": "verification-test.spec.ts",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "about.html has no console errors",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1531,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/s0m0ohl/placerforestschool/verification-test.spec.ts:23:18",
+                        "location": {
+                          "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                          "column": 18,
+                          "line": 23
+                        },
+                        "snippet": "  21 |       });\n  22 |       page.on('pageerror', err => errors.push(err.message));\n> 23 |       await page.goto(`${BASE}${pg.path}`, { waitUntil: 'networkidle' });\n     |                  ^\n  24 |       expect(errors, `Console errors on ${pg.name}: ${errors.join('; ')}`).toEqual([]);\n  25 |     });\n  26 |   }"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                            "column": 18,
+                            "line": 23
+                          },
+                          "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n\n\n  21 |       });\n  22 |       page.on('pageerror', err => errors.push(err.message));\n> 23 |       await page.goto(`${BASE}${pg.path}`, { waitUntil: 'networkidle' });\n     |                  ^\n  24 |       expect(errors, `Console errors on ${pg.name}: ${errors.join('; ')}`).toEqual([]);\n  25 |     });\n  26 |   }\n    at /Users/s0m0ohl/placerforestschool/verification-test.spec.ts:23:18"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-24T04:20:52.537Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                        "column": 18,
+                        "line": 23
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "dee80fc1f2d433bbf4ac-eba019d370746745c832",
+              "file": "verification-test.spec.ts",
+              "line": 17,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "2. Google Fonts loading",
+          "file": "verification-test.spec.ts",
+          "line": 30,
+          "column": 6,
+          "specs": [
+            {
+              "title": "about.html loads Lora and Source Sans 3 fonts",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1152,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/s0m0ohl/placerforestschool/verification-test.spec.ts:40:18",
+                        "location": {
+                          "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                          "column": 18,
+                          "line": 40
+                        },
+                        "snippet": "  38 |         }\n  39 |       });\n> 40 |       await page.goto(`${BASE}${pg.path}`, { waitUntil: 'networkidle' });\n     |                  ^\n  41 |\n  42 |       const linkHrefs = await page.$$eval('link[href*=\"fonts.googleapis.com\"]', els =>\n  43 |         els.map(el => el.getAttribute('href') || '')"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                            "column": 18,
+                            "line": 40
+                          },
+                          "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n\n\n  38 |         }\n  39 |       });\n> 40 |       await page.goto(`${BASE}${pg.path}`, { waitUntil: 'networkidle' });\n     |                  ^\n  41 |\n  42 |       const linkHrefs = await page.$$eval('link[href*=\"fonts.googleapis.com\"]', els =>\n  43 |         els.map(el => el.getAttribute('href') || '')\n    at /Users/s0m0ohl/placerforestschool/verification-test.spec.ts:40:18"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-24T04:20:55.337Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                        "column": 18,
+                        "line": 40
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "dee80fc1f2d433bbf4ac-7b9220c4c78c136436cb",
+              "file": "verification-test.spec.ts",
+              "line": 32,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "3. All images load without errors",
+          "file": "verification-test.spec.ts",
+          "line": 53,
+          "column": 6,
+          "specs": [
+            {
+              "title": "about.html has no broken images",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1163,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/s0m0ohl/placerforestschool/verification-test.spec.ts:56:18",
+                        "location": {
+                          "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                          "column": 18,
+                          "line": 56
+                        },
+                        "snippet": "  54 |   for (const pg of PAGES) {\n  55 |     test(`${pg.name} has no broken images`, async ({ page }) => {\n> 56 |       await page.goto(`${BASE}${pg.path}`, { waitUntil: 'networkidle' });\n     |                  ^\n  57 |       const broken = await page.$$eval('img', imgs =>\n  58 |         imgs\n  59 |           .filter(img => !img.complete || img.naturalWidth === 0)"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                            "column": 18,
+                            "line": 56
+                          },
+                          "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n\n\n  54 |   for (const pg of PAGES) {\n  55 |     test(`${pg.name} has no broken images`, async ({ page }) => {\n> 56 |       await page.goto(`${BASE}${pg.path}`, { waitUntil: 'networkidle' });\n     |                  ^\n  57 |       const broken = await page.$$eval('img', imgs =>\n  58 |         imgs\n  59 |           .filter(img => !img.complete || img.naturalWidth === 0)\n    at /Users/s0m0ohl/placerforestschool/verification-test.spec.ts:56:18"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-24T04:20:57.444Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                        "column": 18,
+                        "line": 56
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "dee80fc1f2d433bbf4ac-62da969c23054d6642da",
+              "file": "verification-test.spec.ts",
+              "line": 55,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "4. Copyright year is 2026",
+          "file": "verification-test.spec.ts",
+          "line": 79,
+          "column": 6,
+          "specs": [
+            {
+              "title": "about.html shows copyright 2026",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1160,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/s0m0ohl/placerforestschool/verification-test.spec.ts:82:18",
+                        "location": {
+                          "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                          "column": 18,
+                          "line": 82
+                        },
+                        "snippet": "  80 |   for (const pg of PAGES) {\n  81 |     test(`${pg.name} shows copyright 2026`, async ({ page }) => {\n> 82 |       await page.goto(`${BASE}${pg.path}`, { waitUntil: 'networkidle' });\n     |                  ^\n  83 |       const bodyText = await page.textContent('body');\n  84 |       const hasCopyright2026 =\n  85 |         bodyText?.includes('\\u00A9 2026') ||"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                            "column": 18,
+                            "line": 82
+                          },
+                          "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n\n\n  80 |   for (const pg of PAGES) {\n  81 |     test(`${pg.name} shows copyright 2026`, async ({ page }) => {\n> 82 |       await page.goto(`${BASE}${pg.path}`, { waitUntil: 'networkidle' });\n     |                  ^\n  83 |       const bodyText = await page.textContent('body');\n  84 |       const hasCopyright2026 =\n  85 |         bodyText?.includes('\\u00A9 2026') ||\n    at /Users/s0m0ohl/placerforestschool/verification-test.spec.ts:82:18"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-24T04:20:59.455Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                        "column": 18,
+                        "line": 82
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "dee80fc1f2d433bbf4ac-421a3a2aead9fdcbf3ef",
+              "file": "verification-test.spec.ts",
+              "line": 81,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "5. No specific times on pages",
+          "file": "verification-test.spec.ts",
+          "line": 94,
+          "column": 6,
+          "specs": [
+            {
+              "title": "about.html has no specific times",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1156,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/s0m0ohl/placerforestschool/verification-test.spec.ts:102:18",
+                        "location": {
+                          "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                          "column": 18,
+                          "line": 102
+                        },
+                        "snippet": "  100 |   for (const pg of PAGES) {\n  101 |     test(`${pg.name} has no specific times`, async ({ page }) => {\n> 102 |       await page.goto(`${BASE}${pg.path}`, { waitUntil: 'networkidle' });\n      |                  ^\n  103 |       const bodyText = await page.textContent('body') || '';\n  104 |       const matches: string[] = [];\n  105 |       for (const pat of timePatterns) {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                            "column": 18,
+                            "line": 102
+                          },
+                          "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n\n\n  100 |   for (const pg of PAGES) {\n  101 |     test(`${pg.name} has no specific times`, async ({ page }) => {\n> 102 |       await page.goto(`${BASE}${pg.path}`, { waitUntil: 'networkidle' });\n      |                  ^\n  103 |       const bodyText = await page.textContent('body') || '';\n  104 |       const matches: string[] = [];\n  105 |       for (const pat of timePatterns) {\n    at /Users/s0m0ohl/placerforestschool/verification-test.spec.ts:102:18"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-24T04:21:01.524Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                        "column": 18,
+                        "line": 102
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "dee80fc1f2d433bbf4ac-764f37b8d94d0c3fc6e4",
+              "file": "verification-test.spec.ts",
+              "line": 101,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "7. Correct phone number (916) 258-5035",
+          "file": "verification-test.spec.ts",
+          "line": 136,
+          "column": 6,
+          "specs": [
+            {
+              "title": "about.html has no placeholder phone",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1152,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/s0m0ohl/placerforestschool/verification-test.spec.ts:139:18",
+                        "location": {
+                          "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                          "column": 18,
+                          "line": 139
+                        },
+                        "snippet": "  137 |   for (const pg of PAGES) {\n  138 |     test(`${pg.name} has no placeholder phone`, async ({ page }) => {\n> 139 |       await page.goto(`${BASE}${pg.path}`, { waitUntil: 'networkidle' });\n      |                  ^\n  140 |       const text = await page.textContent('body') || '';\n  141 |       expect(text, `Placeholder phone on ${pg.name}`).not.toMatch(/1234567890|123-456-7890|\\(123\\)\\s*456/);\n  142 |       if (/\\(\\d{3}\\)\\s*\\d{3}[-.]\\d{4}|\\d{3}[-.]\\d{3}[-.]\\d{4}/.test(text)) {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                            "column": 18,
+                            "line": 139
+                          },
+                          "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n\n\n  137 |   for (const pg of PAGES) {\n  138 |     test(`${pg.name} has no placeholder phone`, async ({ page }) => {\n> 139 |       await page.goto(`${BASE}${pg.path}`, { waitUntil: 'networkidle' });\n      |                  ^\n  140 |       const text = await page.textContent('body') || '';\n  141 |       expect(text, `Placeholder phone on ${pg.name}`).not.toMatch(/1234567890|123-456-7890|\\(123\\)\\s*456/);\n  142 |       if (/\\(\\d{3}\\)\\s*\\d{3}[-.]\\d{4}|\\d{3}[-.]\\d{3}[-.]\\d{4}/.test(text)) {\n    at /Users/s0m0ohl/placerforestschool/verification-test.spec.ts:139:18"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-24T04:21:03.526Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                        "column": 18,
+                        "line": 139
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "dee80fc1f2d433bbf4ac-2fbd426a0b972b5bb471",
+              "file": "verification-test.spec.ts",
+              "line": 138,
+              "column": 9
+            }
+          ]
+        },
+        {
+          "title": "9. Mobile responsiveness at 375px",
+          "file": "verification-test.spec.ts",
+          "line": 177,
+          "column": 6,
+          "specs": [
+            {
+              "title": "about.html renders at 375px without horizontal scroll",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 95,
+                      "error": {
+                        "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n\n    at /Users/s0m0ohl/placerforestschool/verification-test.spec.ts:184:18",
+                        "location": {
+                          "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                          "column": 18,
+                          "line": 184
+                        },
+                        "snippet": "  182 |       });\n  183 |       const page = await context.newPage();\n> 184 |       await page.goto(`${BASE}${pg.path}`, { waitUntil: 'networkidle' });\n      |                  ^\n  185 |\n  186 |       const scrollWidth = await page.evaluate(() => document.documentElement.scrollWidth);\n  187 |       const clientWidth = await page.evaluate(() => document.documentElement.clientWidth);"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                            "column": 18,
+                            "line": 184
+                          },
+                          "message": "Error: page.goto: net::ERR_CONNECTION_REFUSED at http://localhost:8787/about.html\nCall log:\n\u001b[2m  - navigating to \"http://localhost:8787/about.html\", waiting until \"networkidle\"\u001b[22m\n\n\n  182 |       });\n  183 |       const page = await context.newPage();\n> 184 |       await page.goto(`${BASE}${pg.path}`, { waitUntil: 'networkidle' });\n      |                  ^\n  185 |\n  186 |       const scrollWidth = await page.evaluate(() => document.documentElement.scrollWidth);\n  187 |       const clientWidth = await page.evaluate(() => document.documentElement.clientWidth);\n    at /Users/s0m0ohl/placerforestschool/verification-test.spec.ts:184:18"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-02-24T04:21:05.623Z",
+                      "annotations": [],
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/s0m0ohl/placerforestschool/verification-test.spec.ts",
+                        "column": 18,
+                        "line": 184
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "dee80fc1f2d433bbf4ac-3725d13ca80f50f23db3",
+              "file": "verification-test.spec.ts",
+              "line": 179,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-02-24T04:20:51.116Z",
+    "duration": 15976.462999999998,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 7,
+    "flaky": 0
+  }
+}

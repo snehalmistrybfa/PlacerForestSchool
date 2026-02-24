@@ -18,9 +18,9 @@
     --sunset-orange: #d2691e;
     
     /* Typography */
-    --font-heading: 'Playfair Display', serif;
-    --font-body: 'Lato', sans-serif;
-    
+    --font-heading: 'Lora', serif;
+    --font-body: 'Source Sans 3', sans-serif;
+
     /* Spacing */
     --section-padding: 4rem 0;
     --container-padding: 0 2rem;
@@ -28,7 +28,8 @@
 
 body {
     font-family: var(--font-body);
-    line-height: 1.6;
+    font-size: 1.125rem;
+    line-height: 1.7;
     color: var(--deep-forest);
     background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2070&auto=format&fit=crop');
     background-size: cover;
@@ -78,7 +79,7 @@ body {
 .nav-logo .logo-text {
     color: var(--warm-cream);
     font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     margin-left: 10px;
 }
 
@@ -91,6 +92,7 @@ body {
 .nav-link {
     color: var(--warm-cream);
     text-decoration: none;
+    font-size: 1.2rem;
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
@@ -320,7 +322,7 @@ body {
 
 .section-title {
     font-family: var(--font-heading);
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-size: clamp(2rem, 4vw, 2.75rem);
     color: var(--forest-green);
     text-align: center;
     margin-bottom: 2rem;
@@ -348,7 +350,7 @@ body {
 .intro-text {
     max-width: 800px;
     margin: 0 auto;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     line-height: 1.8;
 }
 
@@ -376,7 +378,7 @@ body {
 
 .benefits-list li {
     padding: 0.4rem 0;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     padding-left: 2.5rem;
     margin-bottom: 0.5rem;
     position: relative;
@@ -443,14 +445,14 @@ body {
 .schedule-card h3 {
     font-family: var(--font-heading);
     color: var(--forest-green);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 1.5rem;
     text-align: center;
 }
 
 .schedule-card p {
     margin-bottom: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
 }
 
 .schedule-card em {
@@ -597,13 +599,13 @@ body {
 
 .cta-section h2 {
     font-family: var(--font-heading);
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     margin-bottom: 1rem;
     color: var(--forest-green);
 }
 
 .cta-section p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     margin-bottom: 2rem;
     max-width: 600px;
     margin-left: auto;
@@ -661,7 +663,7 @@ body {
 
 .contact-info p {
     margin-bottom: 0.5rem;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
 }
 
 .contact-info a {
@@ -683,14 +685,14 @@ body {
 .mission-section h2 {
     font-family: var(--font-heading);
     color: var(--forest-green);
-    font-size: 2rem;
+    font-size: 2.25rem;
     margin-bottom: 2rem;
 }
 
 .mission-section p {
     max-width: 800px;
     margin: 0 auto;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     line-height: 1.8;
     background: rgba(122, 158, 122, 0.1);
     padding: 2rem;
@@ -717,6 +719,7 @@ body {
 
 .footer-section h3 {
     font-family: var(--font-heading);
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
     color: var(--sage-green);
 }
@@ -742,11 +745,12 @@ body {
 
 .footer-section p {
     margin-bottom: 0.5rem;
+    font-size: 1rem;
 }
 
 .footer-tagline {
     font-style: italic;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--sage-green);
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
@@ -786,6 +790,10 @@ body {
         left: 0;
     }
     
+    .nav-link {
+        font-size: 1.3rem;
+    }
+
     .nav-menu li {
         margin: 1rem 0;
     }
@@ -813,12 +821,12 @@ body {
     }
     
     .hero-title {
-        font-size: clamp(1rem, 2.5vw, 1.5rem);
+        font-size: clamp(1.2rem, 3vw, 1.8rem);
         white-space: normal;
         overflow: visible;
         text-overflow: initial;
     }
-    
+
     .carousel-container {
         height: 250px;
     }
@@ -941,14 +949,14 @@ html {
 
 .page-header h1 {
     font-family: var(--font-heading);
-    font-size: 3rem;
+    font-size: 3.25rem;
     color: var(--warm-cream);
     text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
     margin-bottom: 1rem;
 }
 
 .page-header p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--warm-cream);
     text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
     max-width: 600px;
@@ -1067,7 +1075,7 @@ html {
     background: none;
     border: none;
     text-align: left;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--forest-green);
     cursor: pointer;
@@ -1099,6 +1107,8 @@ html {
 .faq-answer p {
     padding: 0 1.5rem 1.5rem;
     color: #555;
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
 .still-have-questions {
@@ -1168,6 +1178,64 @@ html {
 .resource-description {
     color: #555;
     margin-bottom: 1rem;
+}
+
+.resource-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.resource-rating .stars {
+    color: #f0a500;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.resource-rating .rating-text {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.resource-links {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.resource-link {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.amazon-link {
+    background: #f0a500;
+    color: #111;
+}
+
+.amazon-link:hover {
+    background: #d4930e;
+    transform: translateY(-1px);
+}
+
+.goodreads-link {
+    background: transparent;
+    color: var(--forest-green);
+    border: 2px solid var(--sage-green);
+}
+
+.goodreads-link:hover {
+    background: var(--sage-green);
+    color: white;
+    transform: translateY(-1px);
 }
 
 .resource-category {
@@ -1429,20 +1497,21 @@ html {
 .team-info h3 {
     color: var(--forest-green);
     font-family: var(--font-heading);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 0.5rem;
 }
 
 .team-info h4 {
     color: var(--moss-green);
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-weight: 600;
     margin-bottom: 1rem;
 }
 
 .team-info p {
     color: #666;
-    line-height: 1.6;
+    font-size: 1.1rem;
+    line-height: 1.7;
     text-align: left;
     max-width: 100%;
 }
@@ -1455,7 +1524,7 @@ html {
 .team-bio p {
     margin-bottom: 1rem;
     color: #555;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     line-height: 1.7;
 }
 
@@ -1474,6 +1543,18 @@ html {
     color: var(--moss-green);
 }
 
+.content-section h2 {
+    font-family: var(--font-heading);
+    font-size: 2.25rem;
+    color: var(--forest-green);
+    margin-bottom: 1rem;
+}
+
+.content-section > p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+}
+
 .terms-page .content-section {
     background: rgba(245, 243, 240, 0.95);
     padding: 2rem;
@@ -1486,8 +1567,14 @@ html {
 .terms-page h3 {
     font-family: var(--font-heading);
     color: var(--forest-green);
+    font-size: 1.35rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
+}
+
+.terms-page .content-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
 /* Responsive team styles */

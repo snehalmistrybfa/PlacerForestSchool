@@ -19,35 +19,51 @@
     "images": [
       {
         "src": "images/carousel-1.jpg",
-        "alt": "Children exploring outdoor learning environment"
+        "alt": "Children walking hand-in-hand through a green meadow toward oak trees"
       },
       {
         "src": "images/carousel-2.jpg",
-        "alt": "Nature-based activities and discovery"
+        "alt": "Kids playing and exploring in a lush green meadow with oak trees"
       },
       {
         "src": "images/carousel-3.jpg",
-        "alt": "Forest school community connection"
+        "alt": "Children climbing a magnificent oak tree on a sunny day"
       },
       {
         "src": "images/carousel-4.jpg",
-        "alt": "Children engaged in hands-on nature exploration"
+        "alt": "Group of children reading together under sprawling oak trees"
+      },
+      {
+        "src": "images/carousel-5.jpg",
+        "alt": "Children exploring open fields framed by oak tree branches"
+      },
+      {
+        "src": "images/carousel-6.jpg",
+        "alt": "Kids and teacher playing tug-of-war in an open meadow"
       },
       {
         "src": "images/carousel-7.jpg",
-        "alt": "Forest exploration and discovery"
+        "alt": "Children watercolor painting together on blankets outdoors"
       },
       {
         "src": "images/carousel-8.jpg",
-        "alt": "Nature-based learning activities"
+        "alt": "Circle of children sharing nature finds with their hands together"
       },
       {
         "src": "images/carousel-9.jpg",
-        "alt": "Children in forest setting"
+        "alt": "Children playing along a creek in spring oak woodland at Placer Forest School"
       },
       {
         "src": "images/carousel-10.jpg",
-        "alt": "Outdoor education and nature connection"
+        "alt": "Kids climbing granite boulders in oak woodland under blue sky"
+      },
+      {
+        "src": "images/carousel-11.jpg",
+        "alt": "Children using binoculars to explore nature in a green meadow"
+      },
+      {
+        "src": "images/carousel-12.jpg",
+        "alt": "Child journaling and drawing under oak trees with colored pencils"
       }
     ]
   },

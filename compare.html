@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Comparison Viewer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Source Sans 3', sans-serif; background: #1a1a2e; color: #eee; padding: 2rem; }
+        h1 { text-align: center; margin-bottom: 0.5rem; font-size: 2rem; }
+        .subtitle { text-align: center; color: #aaa; margin-bottom: 2rem; font-size: 1.1rem; }
+
+        .image-set { margin-bottom: 3rem; background: #16213e; border-radius: 12px; padding: 1.5rem; }
+        .image-set h2 { margin-bottom: 1rem; color: #7fdbca; font-size: 1.4rem; }
+
+        .tabs { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+        .tab { padding: 0.6rem 1.2rem; background: #0f3460; border: 2px solid transparent; border-radius: 8px; cursor: pointer; font-size: 1rem; color: #ddd; transition: all 0.2s; }
+        .tab:hover { background: #1a4a7a; }
+        .tab.active { background: #e94560; border-color: #e94560; color: #fff; font-weight: 600; }
+
+        .image-container { position: relative; width: 100%; border-radius: 8px; overflow: hidden; background: #000; }
+        .image-container img { width: 100%; height: auto; display: block; transition: opacity 0.3s; }
+        .image-container img.hidden { display: none; }
+
+        .image-label { position: absolute; top: 12px; left: 12px; background: rgba(0,0,0,0.7); color: #fff; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.9rem; font-weight: 600; backdrop-filter: blur(5px); }
+        .image-size { position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.7); color: #7fdbca; padding: 0.4rem 0.8rem; border-radius: 6px; font-size: 0.85rem; backdrop-filter: blur(5px); }
+
+        .info { margin-top: 1rem; padding: 1rem; background: #0f3460; border-radius: 8px; font-size: 0.95rem; line-height: 1.6; }
+        .info strong { color: #7fdbca; }
+
+        .legend { display: flex; gap: 2rem; justify-content: center; margin-bottom: 2rem; flex-wrap: wrap; }
+        .legend-item { display: flex; align-items: center; gap: 0.5rem; }
+        .legend-dot { width: 12px; height: 12px; border-radius: 50%; }
+        .legend-dot.original { background: #3498db; }
+        .legend-dot.imagemagick { background: #2ecc71; }
+        .legend-dot.gemini { background: #e94560; }
+    </style>
+</head>
+<body>
+    <h1>Carousel Image Comparison</h1>
+    <p class="subtitle">Click each tab to compare: Original resize vs ImageMagick (sharpened) vs Gemini AI enhanced</p>
+
+    <div class="legend">
+        <div class="legend-item"><div class="legend-dot original"></div> Original (basic resize, no processing)</div>
+        <div class="legend-item"><div class="legend-dot imagemagick"></div> ImageMagick (Triangle filter + unsharp mask)</div>
+        <div class="legend-item"><div class="legend-dot gemini"></div> Gemini 2.0 Flash (AI enhanced)</div>
+    </div>
+
+    <div class="image-set" id="set-1">
+        <h2>Carousel 1 - Children walking through meadow</h2>
+        <div class="tabs">
+            <div class="tab active" onclick="showImage('set-1', 'original')">Original Resize</div>
+            <div class="tab" onclick="showImage('set-1', 'imagemagick')">ImageMagick Sharpened</div>
+            <div class="tab" onclick="showImage('set-1', 'gemini')">Gemini AI Enhanced</div>
+        </div>
+        <div class="image-container">
+            <img src="images/compare/resized-carousel-1.jpg" alt="Original resize" data-type="original">
+            <img src="images/carousel-1.jpg" alt="ImageMagick sharpened" data-type="imagemagick" class="hidden">
+            <img src="images/compare/gemini-carousel-1.jpg" alt="Gemini enhanced" data-type="gemini" class="hidden">
+            <div class="image-label">Original Resize</div>
+            <div class="image-size" data-sizes='{"original":"531KB","imagemagick":"430KB","gemini":"520KB"}'>531KB</div>
+        </div>
+        <div class="info">
+            <strong>Original:</strong> Basic magick resize to 1920x800, quality 85, no sharpening<br>
+            <strong>ImageMagick:</strong> Triangle filter, -unsharp 0.25x0.25+8+0.065, quality 82, posterize 136<br>
+            <strong>Gemini:</strong> AI Lightroom-style enhancement (warm WB, lifted shadows, natural color boost), re-upscaled to 1920x800
+        </div>
+    </div>
+
+    <div class="image-set" id="set-5">
+        <h2>Carousel 5 - Children exploring fields</h2>
+        <div class="tabs">
+            <div class="tab active" onclick="showImage('set-5', 'original')">Original Resize</div>
+            <div class="tab" onclick="showImage('set-5', 'imagemagick')">ImageMagick Sharpened</div>
+            <div class="tab" onclick="showImage('set-5', 'gemini')">Gemini AI Enhanced</div>
+        </div>
+        <div class="image-container">
+            <img src="images/compare/resized-carousel-5.jpg" alt="Original resize" data-type="original">
+            <img src="images/carousel-5.jpg" alt="ImageMagick sharpened" data-type="imagemagick" class="hidden">
+            <img src="images/compare/gemini-carousel-5.jpg" alt="Gemini enhanced" data-type="gemini" class="hidden">
+            <div class="image-label">Original Resize</div>
+            <div class="image-size" data-sizes='{"original":"603KB","imagemagick":"496KB","gemini":"480KB"}'>603KB</div>
+        </div>
+        <div class="info">
+            <strong>Original:</strong> Basic magick resize to 1920x800, quality 85, no sharpening<br>
+            <strong>ImageMagick:</strong> Triangle filter, -unsharp 0.25x0.25+8+0.065, quality 82, posterize 136<br>
+            <strong>Gemini:</strong> AI Lightroom-style enhancement, re-upscaled to 1920x800
+        </div>
+    </div>
+
+    <div class="image-set" id="set-9">
+        <h2>Carousel 9 - Children at creek in oak woodland</h2>
+        <div class="tabs">
+            <div class="tab active" onclick="showImage('set-9', 'original')">Original Resize</div>
+            <div class="tab" onclick="showImage('set-9', 'imagemagick')">ImageMagick Sharpened</div>
+            <div class="tab" onclick="showImage('set-9', 'gemini')">Gemini AI Enhanced</div>
+        </div>
+        <div class="image-container">
+            <img src="images/compare/resized-carousel-9.jpg" alt="Original resize" data-type="original">
+            <img src="images/carousel-9.jpg" alt="ImageMagick sharpened" data-type="imagemagick" class="hidden">
+            <img src="images/compare/gemini-carousel-9.jpg" alt="Gemini enhanced" data-type="gemini" class="hidden">
+            <div class="image-label">Original Resize</div>
+            <div class="image-size" data-sizes='{"original":"716KB","imagemagick":"575KB","gemini":"538KB"}'>716KB</div>
+        </div>
+        <div class="info">
+            <strong>Original:</strong> Basic magick resize to 1920x800, quality 85, no sharpening<br>
+            <strong>ImageMagick:</strong> Triangle filter, -unsharp 0.25x0.25+8+0.065, quality 82, posterize 136<br>
+            <strong>Gemini:</strong> AI Lightroom-style enhancement, re-upscaled to 1920x800
+        </div>
+    </div>
+
+    <script>
+        function showImage(setId, type) {
+            const set = document.getElementById(setId);
+            const imgs = set.querySelectorAll('.image-container img');
+            const tabs = set.querySelectorAll('.tab');
+            const label = set.querySelector('.image-label');
+            const sizeEl = set.querySelector('.image-size');
+            const sizes = JSON.parse(sizeEl.dataset.sizes);
+
+            imgs.forEach(img => {
+                if (img.dataset.type === type) {
+                    img.classList.remove('hidden');
+                } else {
+                    img.classList.add('hidden');
+                }
+            });
+
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+                if (tab.textContent.toLowerCase().includes(type === 'original' ? 'original' : type === 'imagemagick' ? 'imagemagick' : 'gemini')) {
+                    tab.classList.add('active');
+                }
+            });
+
+            const labels = { original: 'Original Resize', imagemagick: 'ImageMagick Sharpened', gemini: 'Gemini AI Enhanced' };
+            label.textContent = labels[type];
+            sizeEl.textContent = sizes[type];
+        }
+    </script>
+</body>
+</html>

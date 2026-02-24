@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Placer Forest School</title>
-    <meta name="description" content="Get in touch with Placer Forest School. Contact information, location details, and inquiry form for our nature-based learning program in Rocklin, CA.">
+    <title>Contact Placer Forest School | Nature School in Rocklin & Lincoln, CA</title>
+    <meta name="description" content="Contact Placer Forest School for questions about our nature-based outdoor education program for children ages 4-12 in Rocklin, Lincoln, Loomis, and Roseville, CA. Call (916) 258-5035.">
+    <link rel="canonical" href="https://placerforestschool.com/contact.html">
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Contact Us - Placer Forest School">
@@ -22,7 +23,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <!-- Content Management System -->
     <script src="js/content-manager.js"></script>
@@ -97,15 +98,15 @@
 
                 <!-- Program Hours -->
                 <section class="hours-section">
-                    <h2>Program Hours</h2>
+                    <h2>Program Schedule</h2>
                     <div class="schedule-info">
                         <div class="schedule-item">
-                            <h3>Friday</h3>
-                            <p>10:00 AM - 3:00 PM</p>
+                            <h3>Days</h3>
+                            <p>Monday, Wednesday & Friday</p>
                             <p class="schedule-note">Ages 4-12 years old</p>
                         </div>
                     </div>
-                    <p>Please contact us to discuss your child's specific needs and our enrollment process.</p>
+                    <p>Please contact us for current session times and to discuss your child's specific needs.</p>
                 </section>
 
                 <!-- Contact Form -->
@@ -165,7 +166,7 @@
     </main>
 
     <!-- Hidden iframe for form submission -->
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(contactSubmitted){showContactSuccessMessage()}"></iframe>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.contactSubmitted){showContactSuccessMessage()}"></iframe>
 
     <!-- Footer -->
     <footer class="footer">
@@ -186,20 +187,20 @@
                 </div>
                 <div class="footer-section">
                     <h3>Program</h3>
-                    <p>Mon & Wed: 11:30 AM - 3:30 PM | Fri: 9 AM - 1 PM</p>
+                    <p>Monday, Wednesday & Friday</p>
                     <p>Ages 4-12 years old</p>
                     <p>Nature-based drop-off program</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Placer Forest School, LLC. All rights reserved.</p>
+                <p>&copy; 2026 Placer Forest School, LLC. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
     <script>
-        let contactSubmitted = false;
+        var contactSubmitted = false;
         
         document.getElementById('contactForm').addEventListener('submit', function() {
             contactSubmitted = true;

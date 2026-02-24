@@ -36,15 +36,15 @@
   },
   
   "hours": {
-    "title": "Program Hours",
+    "title": "Program Schedule",
     "schedule": [
       {
-        "day": "Friday",
-        "time": "10:00 AM - 3:00 PM",
-        "note": "Ages 4 and up"
+        "day": "Monday, Wednesday & Friday",
+        "time": "",
+        "note": "Ages 4-12 years old"
       }
     ],
-    "additionalInfo": "Please contact us to discuss your child's specific needs and our enrollment process."
+    "additionalInfo": "Please contact us for current session times and to discuss your child's specific needs."
   },
   
   "inquiryForm": {
