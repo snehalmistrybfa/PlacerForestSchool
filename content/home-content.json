@@ -55,7 +55,8 @@
   "introSection": {
     "title": "A Nature-Based Drop-Off Program Guided by Respectful Parenting & Outdoor Learning",
     "paragraphs": [
-      "Welcome to Placer Forest School — a forest school nestled in Placer County, offering child-led, nature-based learning for children ages 4 to 12 years old. Located conveniently for families in Rocklin, Lincoln, Loomis, and Roseville, CA, our three programs meet Monday and Wednesday from 11:30 AM - 3:30 PM, and Friday from 9:00 AM - 1:00 PM in a local open space rich with boulders, trees, and creeks, providing an ideal environment for exploration, movement, and discovery. (Exact location is shared upon registration for privacy and safety.)",
+      "Welcome to Placer Forest School, a nature-based, child-led learning community for children ages 4–12. Nestled in the heart of Placer County and easily accessible to families in Rocklin, Lincoln, Loomis, and Roseville, CA, our programs invite children to learn and explore in a beautiful open-space setting filled with boulders, trees, and creeks.",
+      "We offer three weekly sessions: Monday, Wednesday, and Friday. Our exact location is shared with enrolled families to ensure privacy and safety.",
       "Our school philosophy draws inspiration from leading educators and researchers in the fields of child development, nature-based learning, and respectful parenting. You can explore these influential voices and their work in our <a href=\"resources.html\" class=\"text-link\">resources section</a>.",
       "We fill a vital need in the Lincoln, Roseville, Loomis, and Rocklin area: a developmentally aligned drop-off program where children can:"
     ],
@@ -105,8 +106,8 @@
       "details": [
         {
           "icon": "📅",
-          "label": "Days & Times:",
-          "value": "Monday 11:30 AM - 3:30 PM | Wednesday 11:30 AM - 3:30 PM | Friday 9:00 AM - 1:00 PM"
+          "label": "Days:",
+          "value": "Monday | Wednesday | Friday"
         },
         {
           "icon": "👦👧",
@@ -121,12 +122,12 @@
         {
           "icon": "📆",
           "label": "Session:",
-          "value": "10-week session starting January 5, 2026"
+          "value": "10-week session starting 03/20 - 5/22"
         },
         {
           "icon": "🌱",
           "label": "Cost:",
-          "value": "$520 per session (4 hours/week)"
+          "value": "$550 per session (4 hours/week)"
         }
       ],
       "note": "Exact location shared upon registration for privacy and safety"
@@ -135,10 +136,6 @@
       "title": "Pricing",
       "highlight": "",
       "details": [
-        {
-          "icon": "👨‍👩‍👧‍👦",
-          "text": "10% off tuition for each additional sibling"
-        },
         {
           "icon": "📋",
           "text": "Charter school funds accepted - check enrollment for details"

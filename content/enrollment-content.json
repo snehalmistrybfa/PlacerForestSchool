@@ -7,10 +7,9 @@
   "pricingSection": {
     "title": "🌿 Program Details",
     "details": [
-      "Session Length: 4 hours per week for 10 consecutive weeks, starting the week of 01/05/2026",
+      "Session Length: 4 hours per week for 10 consecutive weeks, starting 03/20 - 5/22",
       "Format: Drop-off program",
-      "Tuition: $520 per session",
-      "Sibling Discount: 10% off tuition for each additional sibling",
+      "Tuition: $550 per session",
       "Charter Funds: We accept charter school funds — please email us for details at placerforestschool@gmail.com",
       "Ages We Welcome: Children ages 4–12"
     ]
@@ -24,9 +23,9 @@
           "label": "Select Program:",
           "options": [
             {"value": "", "text": "Choose a program"},
-            {"value": "Monday Program (11:30 AM - 3:30 PM)", "text": "Monday Program (11:30 AM - 3:30 PM)"},
-            {"value": "Wednesday Program (11:30 AM - 3:30 PM)", "text": "Wednesday Program (11:30 AM - 3:30 PM)"},
-            {"value": "Friday Program (9:00 AM - 1:00 PM)", "text": "Friday Program (9:00 AM - 1:00 PM)"}
+            {"value": "Monday Program", "text": "Monday Program"},
+            {"value": "Wednesday Program", "text": "Wednesday Program"},
+            {"value": "Friday Program", "text": "Friday Program"}
           ]
         }
       }
@@ -148,7 +147,7 @@
         {
           "icon": "",
           "title": "Program Cost:",
-          "text": "$520 per session (4 hours/week for 10 weeks). 10% sibling discount available."
+          "text": "$550 per session (4 hours/week for 10 weeks)."
         },
         {
           "icon": "🌸",
