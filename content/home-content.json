@@ -115,55 +115,6 @@
     ]
   },
   
-  "scheduleSection": {
-    "title": "Program Schedule & Pricing",
-    "card": {
-      "title": "Current Offerings",
-      "details": [
-        {
-          "icon": "📅",
-          "label": "Days:",
-          "value": "Monday | Wednesday | Friday"
-        },
-        {
-          "icon": "👦👧",
-          "label": "Ages:",
-          "value": "4 to 12 years old"
-        },
-        {
-          "icon": "📍",
-          "label": "Location:",
-          "value": "Placer County: Lincoln/Rocklin area (serving Loomis & Roseville too)"
-        },
-        {
-          "icon": "📆",
-          "label": "Session:",
-          "value": "10-week session starting 03/20 - 5/22"
-        },
-        {
-          "icon": "🌱",
-          "label": "Cost:",
-          "value": "$550 per session (4 hours/week)"
-        }
-      ],
-      "note": "Exact location shared upon registration for privacy and safety"
-    },
-    "pricing": {
-      "title": "Pricing",
-      "highlight": "",
-      "details": [
-        {
-          "icon": "📋",
-          "text": "Charter school funds accepted - check enrollment for details"
-        },
-        {
-          "icon": "🔗",
-          "text": "<a href='enrollment.html' class='pricing-link'>View full pricing details on enrollment page →</a>"
-        }
-      ]
-    }
-  },
-  
   "ctaSection": {
     "title": "🌱 Ready to Learn More?",
     "description": "We'd love to welcome your child into our growing forest community.",
