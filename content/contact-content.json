@@ -37,14 +37,8 @@
   
   "hours": {
     "title": "Program Schedule",
-    "schedule": [
-      {
-        "day": "Monday, Wednesday & Friday",
-        "time": "",
-        "note": "Ages 4-12 years old"
-      }
-    ],
-    "additionalInfo": "Please contact us for current session times and to discuss your child's specific needs."
+    "schedule": [],
+    "additionalInfo": "For detailed information about our program schedule, session times, and pricing, please visit our <a href='enrollment.html' class='text-link' style='font-weight: 600;'>Enrollment page</a>. Please contact us to discuss your child's specific needs."
   },
   
   "inquiryForm": {

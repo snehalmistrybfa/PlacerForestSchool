@@ -9,9 +9,9 @@
     "googleAnalyticsId": "G-K6CQNKX257"
   },
   "program": {
-    "schedule": "Monday, Wednesday & Friday",
     "ageRange": "Ages 4 to 12 years old",
-    "description": "Nature-based drop-off program"
+    "description": "Nature-based drop-off program",
+    "enrollmentLink": "<a href='enrollment.html' class='text-link'>View Schedule & Pricing</a>"
   },
   "navigation": [
     {"text": "Home", "url": "index.html"},

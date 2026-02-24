@@ -95,9 +95,9 @@ class ContentManager {
                     </div>
                     <div class="footer-section">
                         <h3>Program</h3>
-                        <p>${this.siteConfig.program.schedule}</p>
                         <p>${this.siteConfig.program.ageRange}</p>
                         <p>${this.siteConfig.program.description}</p>
+                        <p>${this.siteConfig.program.enrollmentLink}</p>
                     </div>
                 </div>
                 <div class="footer-bottom">
