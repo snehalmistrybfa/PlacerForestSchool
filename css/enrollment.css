@@ -213,6 +213,10 @@
         gap: 1.2rem;
     }
 
+    .program-card:nth-child(2) {
+        order: -1;
+    }
+
     .program-card {
         padding: 1.6rem;
     }
