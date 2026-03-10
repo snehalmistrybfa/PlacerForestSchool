@@ -8,21 +8,21 @@
     "title": "🌿 Program Details",
     "programs": [
       {
-        "name": "🌸 Spring Session",
-        "subtitle": "March 20 – May 22",
-        "details": [
-          "4 hours per week for 10 consecutive weeks",
-          "Fridays, 9 AM – 1 PM",
-          "Tuition: $550"
-        ]
-      },
-      {
         "name": "☀️ Summer Camps",
         "subtitle": "Week-long day camps",
         "details": [
           "June 8–12 | June 22–26 | July 13–17",
           "9 AM – 1 PM daily",
           "$330 Early Bird (register by April 1) | $350 Regular"
+        ]
+      },
+      {
+        "name": "🌸 Spring Session",
+        "subtitle": "March 20 – May 22",
+        "details": [
+          "4 hours per week for 10 consecutive weeks",
+          "Fridays, 9 AM – 1 PM",
+          "Tuition: $550"
         ]
       }
     ],

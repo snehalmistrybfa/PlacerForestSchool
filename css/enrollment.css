@@ -106,7 +106,7 @@
     background: white;
     padding: 1.8rem;
     border-radius: 14px;
-    border-left: 5px solid var(--sage-green);
+    border-left: 5px solid var(--sunset-orange);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -117,7 +117,7 @@
 }
 
 .program-card:nth-child(2) {
-    border-left-color: var(--sunset-orange);
+    border-left-color: var(--sage-green);
 }
 
 .program-name {
@@ -155,13 +155,13 @@
     content: '•';
     position: absolute;
     left: 0;
-    color: var(--sage-green);
+    color: var(--sunset-orange);
     font-weight: bold;
     font-size: 1.2rem;
 }
 
 .program-card:nth-child(2) ul li::before {
-    color: var(--sunset-orange);
+    color: var(--sage-green);
 }
 
 .shared-details {
@@ -211,10 +211,6 @@
     .programs-grid {
         grid-template-columns: 1fr;
         gap: 1.2rem;
-    }
-
-    .program-card:nth-child(2) {
-        order: -1;
     }
 
     .program-card {
