@@ -6,13 +6,32 @@
   
   "pricingSection": {
     "title": "🌿 Program Details",
-    "details": [
-      "Session Length: 4 hours per week for 10 consecutive weeks, starting 03/20 - 5/22",
+    "programs": [
+      {
+        "name": "🌸 Spring Session",
+        "subtitle": "March 20 – May 22",
+        "details": [
+          "4 hours per week for 10 consecutive weeks",
+          "Fridays, 9 AM – 1 PM",
+          "Tuition: $550"
+        ]
+      },
+      {
+        "name": "☀️ Summer Camps",
+        "subtitle": "Week-long day camps",
+        "details": [
+          "June 8–12 | June 22–26 | July 13–17",
+          "9 AM – 1 PM daily",
+          "$330 Early Bird (register by April 1) | $350 Regular"
+        ]
+      }
+    ],
+    "sharedDetails": [
       "Format: Drop-off program",
-      "Tuition: $550 per session",
-      "Charter Funds: We accept charter school funds — please email us for details at placerforestschool@gmail.com",
-      "Ages We Welcome: Children ages 4–12"
-    ]
+      "Ages We Welcome: Children ages 4–12",
+      "Charter Funds: We accept charter school funds — please email us for details at placerforestschool@gmail.com"
+    ],
+    "callToAction": "Select your program in the registration form below to get started!"
   },
   
   "formSections": {

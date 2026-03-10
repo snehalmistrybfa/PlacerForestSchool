@@ -64,18 +64,53 @@ function populatePricingSection() {
     if (!pricingSection || !enrollmentContent.pricingSection) return;
 
     const pricing = enrollmentContent.pricingSection;
-    
-    pricingSection.innerHTML = `
-        <div class="pricing-card">
-            <h2 class="pricing-main-title">${pricing.title}</h2>
-            
-            <div class="pricing-details-section">
+
+    // Support both old flat details and new programs structure
+    if (pricing.programs) {
+        const programsHTML = pricing.programs.map(program => `
+            <div class="program-card">
+                <h3 class="program-name">${program.name}</h3>
+                <p class="program-subtitle">${program.subtitle}</p>
                 <ul>
-                    ${pricing.details.map(detail => `<li>${detail}</li>`).join('')}
+                    ${program.details.map(detail => `<li>${detail}</li>`).join('')}
                 </ul>
             </div>
-        </div>
-    `;
+        `).join('');
+
+        const sharedHTML = pricing.sharedDetails ? `
+            <div class="shared-details">
+                <ul>
+                    ${pricing.sharedDetails.map(detail => `<li>${detail}</li>`).join('')}
+                </ul>
+            </div>
+        ` : '';
+
+        const ctaHTML = pricing.callToAction ? `
+            <p class="pricing-cta">${pricing.callToAction}</p>
+        ` : '';
+
+        pricingSection.innerHTML = `
+            <div class="pricing-card">
+                <h2 class="pricing-main-title">${pricing.title}</h2>
+                <div class="programs-grid">
+                    ${programsHTML}
+                </div>
+                ${sharedHTML}
+                ${ctaHTML}
+            </div>
+        `;
+    } else {
+        pricingSection.innerHTML = `
+            <div class="pricing-card">
+                <h2 class="pricing-main-title">${pricing.title}</h2>
+                <div class="pricing-details-section">
+                    <ul>
+                        ${pricing.details.map(detail => `<li>${detail}</li>`).join('')}
+                    </ul>
+                </div>
+            </div>
+        `;
+    }
 }
 
 /**
