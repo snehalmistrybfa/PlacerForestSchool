@@ -8,12 +8,13 @@
     "title": "🌿 Program Details",
     "programs": [
       {
-        "name": "☀️ Summer Camps",
-        "subtitle": "Week-long day camps",
+        "name": "☀️ Summer Day Camps",
+        "subtitle": "Nature-based day camps · 9 AM – 1 PM · Ages 4–12",
         "details": [
-          "June 8–12 | June 22–26 | July 13–17",
-          "9 AM – 1 PM daily",
-          "$330 Early Bird (register by April 1) | $350 Regular"
+          "Session 1: June 10–12 (Tue–Thu, 3 days) — $210 Early Bird | $235 Regular",
+          "Session 2: June 22–26 (Mon–Fri, 5 days) — $330 Early Bird | $350 Regular",
+          "Session 3: July 13–17 (Mon–Fri, 5 days) — $330 Early Bird | $350 Regular",
+          "🐦 Early Bird pricing available through April 1"
         ]
       },
       {
