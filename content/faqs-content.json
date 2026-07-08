@@ -1,8 +1,6 @@
 {
   "meta": {
-    "title": "Frequently Asked Questions - Placer Forest School | Rocklin, Lincoln, Loomis & Ro          "question": "Do you accept charter school funds?",
-          "answer": "Yes, we accept charter funds. Please message for details: placerforestschool@gmail.com"
-        }ille",
+    "title": "Frequently Asked Questions - Placer Forest School | Rocklin, Lincoln, Loomis & Roseville",
     "description": "Find answers to common questions about Placer Forest School's nature-based learning program serving families in Rocklin, Lincoln, Loomis, and Roseville, CA. Forest school enrollment, safety, and daily activities."
   },
   
@@ -102,7 +100,7 @@
         },
         {
           "question": "What are your rates?",
-          "answer": "Tuition is $550 per session. Our program runs for 4 hours each week over a 10-week session. We also accept charter school funds for funding."
+          "answer": "For current tuition and program pricing, please visit our <a href=\"enrollment.html\" class=\"text-link\">Enrollment page</a>. We also accept charter school funds for funding."
         },
         {
           "question": "Do you offer any discounts?",

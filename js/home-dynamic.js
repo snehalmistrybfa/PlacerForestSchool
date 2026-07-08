@@ -157,7 +157,8 @@ function updateIntroSection() {
  */
 function updateScheduleSection() {
     const section = homeContent.scheduleSection;
-    
+    if (!section) return; // no schedule section in content; leave static markup as-is
+
     // Update section title
     const sectionTitle = document.querySelector('.schedule-section .section-title');
     if (sectionTitle) {

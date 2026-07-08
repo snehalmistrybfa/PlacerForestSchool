@@ -117,6 +117,10 @@ function populatePricingSection() {
  * Populate form sections dynamically
  */
 function populateFormSections() {
+    // Registration uses the embedded Google Form iframe; native form-field
+    // population only applies when fieldMappings are provided in content.
+    if (!enrollmentContent.googleForm || !enrollmentContent.googleForm.fieldMappings) return;
+
     // Program Selection
     populateProgramSelection();
     

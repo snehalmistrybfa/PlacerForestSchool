@@ -6,33 +6,13 @@
   
   "pricingSection": {
     "title": "🌿 Program Details",
-    "programs": [
-      {
-        "name": "☀️ Summer Day Camps",
-        "subtitle": "Nature-based day camps · 9 AM – 1 PM · Ages 4–12",
-        "details": [
-          "Session 1: June 10–12 (3 days) — $210 Early Bird | $235 Regular",
-          "Session 2: June 22–26 (5 days) — $330 Early Bird | $350 Regular",
-          "Session 3: July 13–17 (5 days) — $330 Early Bird | $350 Regular",
-          "Early Bird pricing available through April 1"
-        ]
-      },
-      {
-        "name": "🌸 Spring Session",
-        "subtitle": "March 20 – May 22",
-        "details": [
-          "4 hours per week for 10 consecutive weeks",
-          "Fridays, 9 AM – 1 PM",
-          "Tuition: $550"
-        ]
-      }
-    ],
-    "sharedDetails": [
-      "Format: Drop-off program",
+    "details": [
+      "📋 For our current programs, dates, and pricing, please see the program selection form below.",
       "Ages We Welcome: Children ages 4–12",
-      "Charter Funds: We accept charter school funds — please email us for details at placerforestschool@gmail.com"
-    ],
-    "callToAction": "Select your program in the registration form below to get started!"
+      "Format: Drop-off program",
+      "Charter Funds: We accept charter school funds — please email us for details at placerforestschool@gmail.com",
+      "Select your program in the registration form below to get started!"
+    ]
   },
   
   "formSections": {
@@ -167,7 +147,7 @@
         {
           "icon": "",
           "title": "Program Cost:",
-          "text": "$550 per session (4 hours/week for 10 weeks)."
+          "text": "Program cost and payment details are provided with your selected program in the registration form above."
         },
         {
           "icon": "🌸",
